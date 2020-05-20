@@ -13,10 +13,13 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Timer;
+import java.util.TimerTask;
 
 public class ResultScreen extends AppCompatActivity {
-
+    TextView timecount;
     TextView correct;
+    int count = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,6 +29,8 @@ public class ResultScreen extends AppCompatActivity {
         String str=intent.getExtras().getString("score");
 //        System.out.println(str);
         correct.setText(str + "/"+intent.getExtras().getString("totalquestion"));
-
+        timecount=findViewById(R.id.time_count);
+        timecount.setText(intent.getExtras().getString("timer")+"s");
     }
+
 }

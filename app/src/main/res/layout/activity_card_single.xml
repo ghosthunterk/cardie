@@ -55,5 +55,17 @@
             android:background="@drawable/difficulty_default">
         </ImageView>
     </LinearLayout>
+    <Button
+        android:layout_marginRight="5dp"
+        android:layout_gravity="end"
+        android:layout_marginTop="75dp"
+        android:layout_width="100dp"
+        android:text="PRACTICE"
+        android:textColor="@color/textWhite"
+        android:fontFamily="@font/nunitosemibold"
+        android:background="@drawable/card_round_corner_orange"
+        android:layout_height="40dp"
+        android:id="@+id/let_practice">
+    </Button>
 
 </androidx.cardview.widget.CardView>

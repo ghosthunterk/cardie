@@ -13,6 +13,8 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
+import java.util.Timer;
+import java.util.TimerTask;
 
 public class TestMode1 extends AppCompatActivity {
     ViewPagerAdapter_SetResult Adapter;
@@ -25,18 +27,24 @@ public class TestMode1 extends AppCompatActivity {
     Button choiceStop;
     int pos=0;
     int score;
+    int count=0;
     TextView definition;
     Dialog myDialog;
+    TextView mySetName;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_test_mode1);
+        timer();
         setDefinition=findViewById(R.id.test_definition);
         currentCardNum=findViewById(R.id.currentQuestionNum);
         choice1=findViewById(R.id.choice1);
         choice2=findViewById(R.id.choice2);
         choiceStop = findViewById(R.id.choiceStop);
-
+        Intent intent = this.getIntent();
+        String str=intent.getExtras().getString("setName2");
+        mySetName=findViewById(R.id.testmode1_setname);
+        mySetName.setText(str);
         mData=new ArrayList<>();
         mData.add(new Card("C01","Cat","Cute","Noun",R.drawable.cat_standing));
         mData.add(new Card("C01","Dog","Friendly","Noun",R.drawable.cat_standing));
@@ -189,7 +197,25 @@ public class TestMode1 extends AppCompatActivity {
         Intent intent = new Intent(TestMode1.this,ResultScreen.class);
         intent.putExtra("score",String.valueOf(score));
         intent.putExtra("totalquestion",String.valueOf(mData.size()));
+        intent.putExtra("timer",String.valueOf(count));
         startActivity(intent);
+    }
+    public void timer(){
+        Timer T=new Timer();
+        T.scheduleAtFixedRate(new TimerTask() {
+            @Override
+            public void run() {
+                runOnUiThread(new Runnable()
+                {
+                    @Override
+                    public void run()
+                    {
+                        count++;
+                    }
+                });
+            }
+        }, 1000, 1000);
+
     }
 
 }

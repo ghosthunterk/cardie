@@ -11,6 +11,7 @@
         android:orientation="vertical"
         android:gravity="center">
         <TextView
+            android:id="@+id/testmode1_setname"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Card set name"

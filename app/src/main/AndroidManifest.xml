@@ -9,14 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".LoginScreen"></activity>
+        <activity android:name=".TestMode1"></activity>
         <activity android:name=".ResultScreen" />
         <activity android:name=".SetViewActivity" />
         <activity android:name=".UserProfile" />
         <activity android:name=".mode_select" />
         <activity android:name=".card_single" />
         <activity android:name=".setlist_main" />
-        <activity android:name=".TestMode1">
+        <activity android:name=".LoginScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

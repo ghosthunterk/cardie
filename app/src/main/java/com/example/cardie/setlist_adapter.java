@@ -6,6 +6,7 @@ import android.graphics.drawable.Drawable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -50,6 +51,12 @@ public class setlist_adapter extends RecyclerView.Adapter<setlist_adapter.MyView
                 listener.onSetClick(mDrawable);
             }
         });
+        holder.practice.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                listener.onPracticeButtonClick(mDrawable.getSetName());
+            }
+        });
         switch (mDrawable.getDifficulty()) {
             case 1: {
                 //holder.imageView1.setBackgroundResource(R.drawable.circlefull);
@@ -84,6 +91,7 @@ public class setlist_adapter extends RecyclerView.Adapter<setlist_adapter.MyView
         ImageView imageView1;
         ImageView imageView2;
         ImageView imageView3;
+        Button practice;
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
             set_title =  itemView.findViewById(R.id.myset_title);
@@ -91,8 +99,9 @@ public class setlist_adapter extends RecyclerView.Adapter<setlist_adapter.MyView
             imageView1 = itemView.findViewById(R.id.diff1);
             imageView2 = itemView.findViewById(R.id.diff2);
             imageView3 = itemView.findViewById(R.id.diff3);
-
+            practice = itemView.findViewById(R.id.let_practice);
         }
+
     }
 }
 

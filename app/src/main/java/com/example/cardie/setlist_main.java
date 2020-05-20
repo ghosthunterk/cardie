@@ -75,6 +75,13 @@ public class setlist_main extends AppCompatActivity implements SetListener {
     }
 
     @Override
+    public void onPracticeButtonClick(String setName) {
+        Intent intent = new Intent(this,mode_select.class);
+        intent.putExtra("setName",setName);
+        startActivity(intent);
+    }
+
+    @Override
     public void onSetClick(String setName) {
 
     }
