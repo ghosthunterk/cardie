@@ -78,6 +78,18 @@
         android:overScrollMode="never">
 
     </androidx.viewpager.widget.ViewPager>
-
+    <Button
+        android:id="@+id/add_card"
+        android:background="@drawable/card_round_corner_pearl"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="700dp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="ADD CARD"
+        android:textSize="27dp"
+        android:textColor="@color/textWhite"
+        android:fontFamily="@font/nunitosemibold">
+    </Button>
 
 </RelativeLayout>

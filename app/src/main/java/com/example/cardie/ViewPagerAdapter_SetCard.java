@@ -48,7 +48,7 @@ public class ViewPagerAdapter_SetCard extends PagerAdapter {
         ImageView imgView = view1.findViewById(R.id.CardBackground);
         imgView.setImageResource(mDrawableName);
 
-
+        
         TextView cardName = view1.findViewById(R.id.CardName);
         TextView cardType = view1.findViewById(R.id.CardNameType);
         cardName.setText(mData.get(position).getCardWord());

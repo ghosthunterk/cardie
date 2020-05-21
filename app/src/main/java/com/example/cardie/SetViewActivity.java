@@ -2,6 +2,8 @@ package com.example.cardie;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -19,6 +21,7 @@ public class SetViewActivity extends AppCompatActivity {
     ImageView diffEasy;
     ImageView diffMedium;
     ImageView diffHard;
+    Button addcards;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,6 +30,13 @@ public class SetViewActivity extends AppCompatActivity {
         diffEasy = findViewById(R.id.diffEasy);
         diffMedium = findViewById(R.id.diffMedium);
         diffHard = findViewById(R.id.diffHard);
+        addcards=findViewById(R.id.add_card);
+        addcards.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                addcard();
+            }
+        });
         mData = new ArrayList<>();
         mData.add(new Card("C01","Cat","Noun",R.drawable.cat_standing));
         mData.add(new Card("C01","Dog","Noun",R.drawable.cat_standing));
@@ -81,5 +91,9 @@ public class SetViewActivity extends AppCompatActivity {
             default:
                 break;
         }
+    }
+    public void addcard(){
+        Intent intent = new Intent(SetViewActivity.this,AddCard.class);
+        startActivity(intent);
     }
 }

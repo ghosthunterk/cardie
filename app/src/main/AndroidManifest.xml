@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".TestMode1"></activity>
+        <activity android:name=".AddCard"></activity>
+        <activity android:name=".TestMode1" />
         <activity android:name=".ResultScreen" />
         <activity android:name=".SetViewActivity" />
         <activity android:name=".UserProfile" />

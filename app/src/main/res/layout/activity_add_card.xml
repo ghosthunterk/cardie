@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundDark"
+    tools:context=".AddCard">
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <EditText
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:id="@+id/add_card_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter your card name"
+            android:textColorHint="@color/textGrey"
+            android:backgroundTint="@color/textGrey"
+            android:textColor="@color/textWhite"
+            android:fontFamily="@font/nunitolight"
+            android:textSize="27dp">
+        </EditText>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Definition"
+            android:textSize="27dp"
+            android:textColor="@color/textGrey"
+            android:fontFamily="@font/nunitolight">
+        </TextView>
+        <EditText
+            android:layout_below="@id/add_card_name"
+            android:gravity="top|left"
+            android:scrollbars="vertical"
+            android:inputType="textMultiLine"
+            android:lines="6"
+            android:id="@+id/add_card_definition"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:ems="2000"
+            android:singleLine="false"
+            android:textColor="@color/textWhite"
+            android:textColorHint="@color/textGrey"
+            android:backgroundTint="#00FFFFFF"
+            android:fontFamily="@font/nunitolight"
+            android:textSize="27dp">
+        </EditText>
+    </LinearLayout>
+</RelativeLayout>
