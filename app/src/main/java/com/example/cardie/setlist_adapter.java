@@ -1,7 +1,6 @@
 package com.example.cardie;
 
 import android.content.Context;
-import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,6 +13,8 @@ import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
 import androidx.core.content.res.ResourcesCompat;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.cardie.Models.CardieSet;
 
 import java.util.List;
 
@@ -40,9 +41,10 @@ public class setlist_adapter extends RecyclerView.Adapter<setlist_adapter.MyView
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
         final CardieSet mDrawable = mData.get(position);
-        int mDrawableName = mData.get(position).getSetImgUrl(); //R.drawable.bunny_Sweden
-        Drawable d = ResourcesCompat.getDrawable(mContext.getResources(),mDrawableName,null);
-        holder.set_card.setBackground(d);
+        //SetImg turned off for testing API
+//        int mDrawableName = mData.get(position).getSetImgUrl(); //R.drawable.bunny_Sweden
+//        Drawable d = ResourcesCompat.getDrawable(mContext.getResources(),mDrawableName,null);
+//        holder.set_card.setBackground(d);
         holder.set_title.setText(mData.get(position).getSetName());
         //holder.imageView1.setBackgroundTintList(mContext.getResources().getColorStateList(R.color.backgroundbluelight,null));
         holder.set_card.setOnClickListener(new View.OnClickListener() {

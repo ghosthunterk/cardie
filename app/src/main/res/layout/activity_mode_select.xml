@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".mode_select"
+    tools:context=".TestModeActivity"
     android:background="@color/backgroundDark">
     <ImageView
         android:layout_width="450dp"

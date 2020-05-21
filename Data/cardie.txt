@@ -1,0 +1,431 @@
+1.Animal
+{
+	Name: "Bird"
+	Definition: A creature that is covered with feathers and has two wings and two legs. Most birds can fly.
+	Image: https://pixabay.com/vi/photos/chim-ru%E1%BB%93i-gia-c%E1%BA%A7m-thi%C3%AAn-nhi%C3%AAn-1823829/"
+
+	Name: "Cat" 
+	Definition: A small animal with soft fur that people often keep as a pet. Cats catch and kill birds and mice.
+	Image:"https://pixabay.com/vi/photos/cat-pat-%C4%91%E1%BA%B9p-ch%C3%A2n-dung-face-4959941/"
+
+	Name: "Chicken" 
+	Definition: A large bird that is often kept for its eggs or meat
+	Image:"https://pixabay.com/vi/vectors/con-g%C3%A0-tr%E1%BB%91ng-g%C3%A0-tr%E1%BB%91ng-m%C3%A1y-v%C3%B2i-n%C6%B0%E1%BB%9Bc-161546/"
+
+	Name: "Cow"
+	Definition:A large animal kept on farms to produce milk or beef
+	Image:"https://pixabay.com/vi/photos/b%C3%B2-%C4%91%E1%BB%93ng-c%E1%BB%8F-gia-s%C3%BAc-trang-tr%E1%BA%A1i-3617850/"
+
+	Name: "Fish"
+	Definition: A creature that lives in water, breathes through gills, and uses fins and a tail for swimming
+	Image:"https://pixabay.com/vi/photos/%C4%91%E1%BB%99ng-v%E1%BA%ADt-h%E1%BB%93-c%C3%A1-th%E1%BB%A7y-s%E1%BA%A3n-m%C3%A0u-xanh-21668/"
+
+	Name: "Horse"
+	Definition: A large animal with four legs, a mane (= long thick hair on its neck) and a tail. Horses are used for riding on, pulling carriages, etc.
+	Image:"https://pixabay.com/vi/photos/ng%E1%BB%B1a-%C4%91%E1%BB%99ng-v%E1%BA%ADt-thi%C3%AAn-nhi%C3%AAn-%C4%91i-xe-561221/"
+
+	Name: "Snake"
+	Definition: A reptile with a very long thin body and no legs. There are many types of snake, some of which are poisonous.
+	Image:"https://pixabay.com/vi/photos/con-r%E1%BA%AFn-kh%C3%B4ng-%C4%91%E1%BB%99c-h%E1%BA%A1i-b%C3%B2-s%C3%A1t-861713/"
+
+	Name: "Mouse"
+	Definition: A small animal that is covered in fur and has a long thin tail. Mice live in fields, in people’s houses or where food is stored.
+	Image:"https://pixabay.com/vi/photos/%C4%91%E1%BB%99ng-v%E1%BA%ADt-h%E1%BA%A5p-d%E1%BA%ABn-%C4%91%E1%BA%B9p-c%E1%BA%ADu-b%C3%A9-n%C3%A2u-1238228/"
+
+	Name: "Spider"
+	Definition: A small creature with eight thin legs. Many spiders spin webs to catch insects for food.
+	Image:"https://pixabay.com/vi/photos/nh%E1%BB%87n-araneus-m%E1%BA%A1ng-nh%E1%BB%87n-%C4%91%E1%BB%99ng-v%E1%BA%ADt-4511423/"
+
+	Name: "Sheep"
+	Definition: An animal with a thick coat, kept on farms for its meat (called mutton or lamb) or its wool
+	Image:"https://pixabay.com/vi/photos/ireland-c%E1%BB%ABu-ch%C4%83n-nu%C3%B4i-gia-s%C3%BAc-1985088/"
+}
+
+2.Work
+{
+	Name: "Chef"
+	Definition:"a person whose job is to cook, especially the most senior person in a restaurant, hotel, etc"
+	Image:"https://pixabay.com/vi/photos/nh%C3%A0-b%E1%BA%BFp-%C4%91%E1%BA%A7u-b%E1%BA%BFp-th%E1%BB%B1c-ph%E1%BA%A9m-%C4%91%C3%A8n-81493/"
+
+	Name: "Teacher"
+	Definition:"a person whose job is teaching, especially in a school"
+	Image:"https://pixabay.com/vi/photos/gi%C3%A1o-vi%C3%AAn-n%E1%BB%AF-%C4%91%E1%BA%A1i-h%E1%BB%8Dc-sinh-vi%C3%AAn-1280966/"
+
+	Name: "Guitarist"
+	Definition:"a person who plays the guitar."
+	Image:"https://pixabay.com/vi/photos/ban-nh%E1%BA%A1c-bu%E1%BB%95i-h%C3%B2a-nh%E1%BA%A1c-2179313/"
+
+	Name: "Waiter"
+	Definition: "a person whose job is to serve customers at their tables in a restaurant, etc."
+	Image:"https://pixabay.com/vi/illustrations/nh%C3%A2n-v%E1%BA%ADt-ho%E1%BA%A1t-h%C3%ACnh-b%E1%BB%93i-b%C3%A0n-%C3%BD-t%C6%B0%E1%BB%9Fng-2947794/"
+
+	Name: "Doctor"
+	Definition:"a person who has been trained in medical science, whose job is to treat people who are ill or injured"
+	Image:"https://pixabay.com/vi/vectors/c%E1%BA%ADu-b%C3%A9-phim-ho%E1%BA%A1t-h%C3%ACnh-2027768/"
+
+	Name: "Driver"
+	Definition:"a person who drives a vehicle"
+	Image:"https://pixabay.com/vi/photos/xe-%C4%91%E1%BA%A1p-cu%E1%BB%99c-%C4%91ua-nhanh-xe-m%C3%A1y-biker-3319660/"
+
+	Name: "Farmer"
+	Definition:"a person who owns or manages a farm"
+	Image:"https://pixabay.com/vi/vectors/n%C3%B4ng-d%C3%A2n-lao-%C4%91%E1%BB%99ng-n%C3%B4ng-th%C3%B4n-148325/"
+
+	Name: "Photographer"
+	Definition:"a person who takes photographs, especially as a job"
+	Image:"https://pixabay.com/vi/vectors/ng%C6%B0%E1%BB%9Di-%C4%91%C3%A0n-%C3%B4ng-nhi%E1%BA%BFp-%E1%BA%A3nh-gia-37500/"
+
+	Name: "Lawyer"
+	Definition:"a person who is trained and qualified to advise people about the law and to represent them in court, and to write legal documents"
+	Image:"https://pixabay.com/vi/vectors/lu%E1%BA%ADt-s%C6%B0-m%C3%A0u-%C4%91en-v%C3%A0-tr%E1%BA%AFng-ng%C6%B0%E1%BB%9Di-28782/"
+
+	Name: "Engineer"
+	Definition: "a person whose job involves designing and building engines, machines, roads, bridges, etc."
+	Image:"https://pixabay.com/vi/vectors/k%E1%BB%B9-s%C6%B0-ki%E1%BA%BFn-tr%C3%BAc-s%C6%B0-ng%C6%B0%E1%BB%9Di-k%E1%BA%BF-ho%E1%BA%A1ch-296438/"
+	
+}
+3.Food
+{
+	Name: "Beef"
+	Definition:"meat that comes from a cow"
+	Image: "https://pixabay.com/vi/photos/b%C3%ADt-t%E1%BA%BFt-rumpsteak-li%E1%BB%87u-th%E1%BB%8Bt-b%C3%B2-2975323/"
+
+	Name: "Cupcake"
+	Definition: "?a small cake, baked in a paper container that is like a cup in shape and often with icing on top"
+	Image:"https://pixabay.com/vi/photos/b%C3%A1nh-n%C6%B0%E1%BB%9Bng-x%E1%BB%91p-n%C6%B0%E1%BB%9Bng-cupcake-ngon-1329679/"
+
+	Name: "Hotdog"
+	Definition:"a hot sausage served in a long bread roll"
+	Image:"https://pixabay.com/vi/photos/hotdog-th%E1%BB%B1c-ph%E1%BA%A9m-x%C3%BAc-x%C3%ADch-m%C3%B9-t%E1%BA%A1t-4589626/"
+
+	Name: "Salad"
+	Definition: "a mixture of raw vegetables such as lettuce, tomato and cucumber, usually served with other food as part of a meal"
+	Image:"https://pixabay.com/vi/photos/rau-di%E1%BA%BFp-h%E1%BB%97n-h%E1%BB%A3p-x%C3%A0-l%C3%A1ch-1812349/"
+
+	Name: "Soup"
+	Definition: "?a liquid food made by boiling meat, vegetables, etc. in water, often eaten as the first course of a meal"
+	Image:"https://pixabay.com/vi/photos/s%C3%BAp-b%C3%AD-ng%C3%B4-d%E1%BB%ABa-s%C3%BAp-b%C3%AD-ng%C3%B4-%C4%83n-chay-1787997/"
+
+	Name: "French Fry"
+	Definition: "a long thin piece of potato fried in oil or fat"
+	Image:"https://pixabay.com/vi/photos/khoai-t%C3%A2y-chi%C3%AAn-mu%E1%BB%91i-th%E1%BB%B1c-ph%E1%BA%A9m-923687/"
+
+	Name: "Chip"
+	Definition:"a long thin piece of potato fried in oil or fat"
+	Image: "https://pixabay.com/vi/photos/chip-munchies-pringles-843993/"
+
+	Name: "Pizza"
+	Definition: "an Italian dish consisting of a flat round bread base with cheese, tomatoes, vegetables, meat, etc. on top"
+	Image: "https://pixabay.com/vi/photos/b%C3%A1nh-pizza-th%E1%BB%B1c-ph%E1%BA%A9m-%C3%BD-n%C6%B0%E1%BB%9Bng-3007395/"
+
+	Name: "Spaghetti"
+	Definition:"?pasta in the shape of long thin pieces that look like string when they are cooked"
+	Image: "https://pixabay.com/vi/photos/spaghetti-m%C3%AC-%E1%BB%91ng-th%E1%BB%B1c-ph%E1%BA%A9m-nh%C3%A0-h%C3%A0ng-863304/"
+
+	Name: "Turkey"
+	Definition:" a large bird that is often kept for its meat, eaten especially at Christmas in the UK and at Thanksgiving in the US "
+	Image:"https://pixabay.com/vi/photos/g%C3%A0-t%C3%A2y-th%E1%BB%B1c-ph%E1%BA%A9m-t%E1%BA%A1-%C6%A1n-truy%E1%BB%81n-th%E1%BB%91ng-5069219/"
+	
+}
+
+4.Drink
+{
+	Name: "Milkshake"
+	Definition:"?a drink made of milk, and sometimes ice cream, with the added taste of fruit or chocolate, which is mixed or shaken until it is full of bubbles"
+	Image:"https://pixabay.com/vi/vectors/milkshake-n%C3%A2u-s%C3%B4-c%C3%B4-la-r%C6%A1m-u%E1%BB%91ng-34316/
+
+	Name: "Tea"
+	Definition:"the dried leaves (called tea leaves) of the tea bus"
+	Image:"https://pixabay.com/vi/vectors/tr%C3%A0-teabag-c%E1%BB%91c-r%E1%BB%97ng-k%C3%ADnh-25198/ "
+
+	Name: "Coffee"
+	Definition:"a hot drink made from coffee powder and boiling water. It may be drunk with milk and/or sugar added."
+	Image:"https://pixabay.com/vi/vectors/c%C3%A0-ph%C3%AA-c%E1%BB%91c-h%C3%BAt-thu%E1%BB%91c-n%C3%B3ng-u%E1%BB%91ng-34251/
+
+	Name: "Beer"
+	Definition:"an alcoholic drink made from malt with hops added to give it taste. There are many types of beer."
+	Image:"https://pixabay.com/vi/vectors/bia-c%E1%BB%91c-%C4%91%E1%BA%A7y-%C4%91%E1%BB%A7-b%E1%BB%8Dt-u%E1%BB%91ng-k%C3%ADnh-26722/"
+
+	Name: "Hot chocolate"
+	Definition:"a drink made by mixing chocolate powder with hot water or milk; a cup of this drink"
+	Image:"https://pixabay.com/vi/vectors/s%C3%B4-c%C3%B4-la-n%C3%B3ng-pha-c%C3%A0-ph%C3%AA-s%C3%B4-c%C3%B4-la-576418/"
+
+	Name: "Milk"
+	Definition:"the white liquid produced by cows, goats and some other animals as food for their young and used as a drink by humans"
+	Image:"https://pixabay.com/vi/vectors/s%E1%BB%AFa-chai-n%C6%B0%E1%BB%9Bc-gi%E1%BA%A3i-kh%C3%A1t-tr%E1%BA%AFng-576439/"
+
+	Name: "Soda"
+	Definition:"fizzy water (= water with bubbles) used as a drink on its own or to mix with alcoholic drinks or fruit juice (originally made with sodium bicarbonate)"
+	Image:""https://pixabay.com/vi/vectors/s%C3%A1u-g%C3%B3i-%C4%91%E1%BB%93-u%E1%BB%91ng-n%C6%B0%E1%BB%9Bc-ng%E1%BB%8Dt-bia-lon-25200/
+
+	Name: "Juice"
+	Definition:"the liquid that comes from fruit or vegetables; a drink made from this"
+	Image:"https://pixabay.com/vi/vectors/t%C3%A0i-s%E1%BA%A3n-b%E1%BB%99-s%C6%B0u-t%E1%BA%ADp-tr%C3%B2-ch%C6%A1i-k%C3%ADnh-1296895/"
+
+	Name: "Wine"
+	Definition:"an alcoholic drink made from the juice of grapes that has been left to ferment. There are many different kinds of wine."
+	Image:"https://pixabay.com/vi/vectors/r%C6%B0%E1%BB%A3u-thanh-n%C6%B0%E1%BB%9Bc-gi%E1%BA%A3i-kh%C3%A1t-blanc-1031713/"
+
+	Name: "Cocktail"
+	Definition:"a drink usually made from a mixture of one or more spirits (= strong alcoholic drinks) and fruit juice. It can also be made without alcohol."
+	Image:"https://pixabay.com/vi/vectors/cocktail-margarita-martini-u%E1%BB%91ng-575631/"
+	
+}
+
+5.Countries
+{
+	Name: USA 
+	Definition:"United States of America"
+	Image:"https://pixabay.com/vi/photos/american-c%E1%BB%9D-ch%C3%BAng-t%C3%B4i-c%E1%BB%9D-c%E1%BB%9D-m%E1%BB%B9-301164/"
+
+	Name: UK (United Kingdom)
+	Definition:"?United Kingdom"
+	Image:"https://pixabay.com/vi/photos/anh-c%E1%BB%9D-ng%C3%B4n-ng%E1%BB%AF-bi%E1%BB%83u-t%C6%B0%E1%BB%A3ng-uk-4474567/"
+
+	Name: Australia
+	Definition:"?a large island country and continent in the south-west Pacific Ocean. Its capital city is Canberra"
+	Image:"https://pixabay.com/vi/photos/qu%E1%BB%91c-kh%C3%A1nh-%C3%BAc-c%E1%BB%9D-%C3%BAc-b%C3%A3i-bi%E1%BB%83n-1134930/"
+
+	Name: Mexico
+	Definition:"a country in southern North America"
+	Image:"https://pixabay.com/vi/photos/c%E1%BB%9D-mexico-mexican-bi%E1%BB%83u-t%C6%B0%E1%BB%A3ng-4550138/"
+
+	Name: India
+	Definition:"?a country in southern Asia which used to be part of the British Empire. It became independent and a member of the Commonwealth in 1947."
+	Image:"https://pixabay.com/vi/photos/c%E1%BB%9D-%E1%BA%A5n-%C4%91%E1%BB%99-thi%C3%AAn-nhi%C3%AAn-qu%E1%BB%91c-k%E1%BB%B3-%E1%BA%A5n-%C4%91%E1%BB%99-3563332/"
+
+	Name: France
+	Definition:"?a country in western Europe"
+	Image:"https://pixabay.com/vi/photos/c%E1%BB%9D-ph%C3%A1p-ph%C3%A1p-c%E1%BB%9D-qu%E1%BB%91c-gia-1064395/"
+
+	Name: China
+	Definition:"a country of eastern Asia bordering on the Pacific; the most populous country in the world; a republic whose capital is Beijing "
+	Image:"https://pixabay.com/vi/photos/m%C3%A0u-%C4%91%E1%BB%8F-c%E1%BB%9D-ch%E1%BB%A7-ngh%C4%A9a-x%C3%A3-h%E1%BB%99i-1028364/"
+
+	Name: Germany
+	Definition:"?a country in central Europe"
+	Image:"https://pixabay.com/vi/photos/c%E1%BB%9D-%C4%91%E1%BB%A9c-m%C3%A0u-%C4%91en-%C4%91%E1%BB%8F-v%C3%A0ng-%C4%91%E1%BB%A9c-c%E1%BB%9D-3255128/"
+
+	Name: Japan
+	Definition:"?a country consisting of a group of islands in eastern Asia"
+	Image:"https://pixabay.com/vi/photos/%C3%A1-ch%C3%A2u-%C3%A1-m%C3%A0u-xanh-%C4%91%E1%BA%A5t-n%C6%B0%E1%BB%9Bc-c%E1%BB%9D-21442/"
+
+	Name: Thailand
+	Definition:"a country in South East Asia"
+	Image:"https://pixabay.com/vi/vectors/bi%C3%AAn-gi%E1%BB%9Bi-%C4%91%E1%BA%A5t-n%C6%B0%E1%BB%9Bc-c%E1%BB%9D-%C4%91%E1%BB%8Ba-l%C3%BD-2099230/"
+	
+}
+6.Clothes
+{
+	Name: "Jeans"
+	Definition: "trousers made of denim (= a type of strong cotton)"
+	Image:"https://pixabay.com/vi/photos/m%C3%A0u-%C4%91en-c%C5%A9-l%E1%BB%8Fng-l%E1%BA%BBo-qu%E1%BA%A7n-jean-1146793/"
+
+	Name: "Kimono"
+	Definition:"a traditional Japanese piece of clothing like a long loose dress with wide sleeves (= parts covering the arms), worn on formal occasions; a dressing gown or robe in this style"
+	Image:"https://pixabay.com/vi/photos/th%E1%BB%9Di-trang-nh%E1%BA%ADt-b%E1%BA%A3n-kimono-1025375/"
+
+	Name: "Sari"
+	Definition:"?a long piece of cloth that is wrapped around the body and worn as the main piece of clothing by women in South Asia"
+	Image:"https://pixabay.com/vi/photos/saree-th%E1%BB%9Di-trang-l%E1%BB%A5a-v%C3%A1y-362756/"
+
+	Name: "Trousers"
+	Definition:"a piece of clothing that covers the lower body and is divided into two parts to cover each leg separately"
+	Image:"https://pixabay.com/vi/photos/c%E1%BA%ADu-b%C3%A9-ng%C6%B0%E1%BB%9Di-%C4%91%C3%A0n-%C3%B4ng-ng%C6%B0%E1%BB%9Di-nam-3637094/"
+
+	Name: "Jacket"
+	Definition:"a piece of clothing worn on the top half of the body over a shirt, etc. that has arms and fastens down the front; a short, light coat"
+	Image:"https://pixabay.com/vi/photos/jacket-%C3%A1o-kho%C3%A1t-ngo%C3%A0i-b%E1%BA%B1ng-da-947395/"
+
+	Name: "Dress"
+	Definition:"a piece of women’s clothing that is made in one piece and covers the body down to the legs, sometimes reaching to below the knees, or to the ankles"
+	Image:"https://pixabay.com/vi/photos/c%C3%B4-g%C3%A1i-v%C3%A1y-tr%E1%BA%AFng-ki%E1%BB%83u-t%C3%B3c-t%C3%B3c-1333640/"
+
+	Name: "T-shirt"
+	Definition:"an informal shirt, usually with short sleeves (= arms) no collar or buttons, or just a few buttons at the top"
+	Image:"https://pixabay.com/vi/photos/gi%E1%BA%A3-l%E1%BA%ADp-t-shirt-gi%E1%BA%A3-m%C3%A0u-xanh-2710535/"
+
+	Name: "Sweater"
+	Definition:"a piece of clothing for the upper part of the body, made of wool or cotton, with long sleeves"
+	Image:"https://pixabay.com/vi/photos/%C3%A1o-len-%C3%A1o-in-%E1%BA%A5n-m%C3%A0n-h%C3%ACnh-ngh%E1%BB%87-thu%E1%BA%ADt-1843619/"
+
+	Name: "Sneaker"
+	Definition:"a shoe that you wear for sports or as informal clothing"
+	Image:"https://pixabay.com/vi/photos/gi%C3%A0y-ch%C3%A2n-sneaker-gi%C3%A0y-th%E1%BB%83-thao-1028790/"
+
+	Name: "Sandal"
+	Definition:"a type of light open shoe that is worn in warm weather. The top part consists of leather bands that fasten the sole to your foot."
+	Image:"https://pixabay.com/vi/photos/sandal-gi%C3%A0y-gi%C3%A0y-c%E1%BB%A7a-ph%E1%BB%A5-n%E1%BB%AF-1521473/"
+	
+}
+7.Natures
+{
+	Name: "Forest"
+	Definition:"a large area of land that is thickly covered with trees"
+	Image:"https://pixabay.com/vi/photos/c%C3%A2y-con-%C4%91%C6%B0%E1%BB%9Dng-%C4%91%C6%B0%E1%BB%9Dng-m%C3%B2n-c%C5%A9-%C4%91%C6%B0%E1%BB%9Dng-2897757/"
+
+	Name: "Waterfall"
+	Definition:"a place where a stream or river falls from a high place, for example over a cliff or rock"
+	Image:"https://pixabay.com/vi/photos/triberg-th%C3%A1c-n%C6%B0%E1%BB%9Bc-r%E1%BB%ABng-%C4%91en-torrent-4984171/"
+
+	Name: "Desert"
+	Definition:"?a large area of land that has very little water and very few plants growing on it. Many deserts are covered by sand."
+	Image:"https://pixabay.com/vi/photos/sa-m%E1%BA%A1c-sahara-c%C3%A1t-c%E1%BA%A3nh-quan-kh%C3%B4-4134918/"
+
+	Name: "Flower"
+	Definition:" the coloured part of a plant from which the seed or fruit develops. Flowers usually grow at the end of a stem and last only a short time."
+	Image:"https://pixabay.com/vi/photos/mai-m%E1%BA%ADn-spring-flower-m%C3%B9a-xu%C3%A2n-4946160/"
+
+	Name: "Island"
+	Definition:"a piece of land that is completely surrounded by water"
+	Image:"https://pixabay.com/vi/photos/%C4%91%E1%BA%A3o-san-h%C3%B4-b%C3%A3i-bi%E1%BB%83n-c%C3%A2y-c%E1%BB%8D-k%E1%BB%B3-ngh%E1%BB%89-2178747/"
+
+	Name: "Lake"
+	Definition:"a large area of water that is surrounded by land"
+	Image:"https://pixabay.com/vi/photos/hallstatt-n%C3%BAi-%C3%A1o-lake-n%C3%BAi-cao-4495734/"
+
+	Name: "'Mountain
+	Definition:"a very high hill, often with rocks near the top"
+	Image:"https://pixabay.com/vi/photos/alps-%C4%91%E1%BA%A7u-n%C3%BAi-c%E1%BA%A3nh-quan-thi%C3%AAn-nhi%C3%AAn-4553488/"
+
+	Name: "Sunset"
+	Definition:" the time when the sun goes down and night begins"
+	Image:"https://pixabay.com/vi/photos/ho%C3%A0ng-h%C3%B4n-bi%E1%BB%83n-b%E1%BA%A7u-tr%E1%BB%9Di-%C4%91%E1%BA%A1i-d%C6%B0%C6%A1ng-4376835/"
+
+	Name: "Moon"
+	Definition: " the round object that moves around the earth once every 27½ days and shines at night by light reflected from the sun"
+	Image:"https://pixabay.com/vi/photos/m%E1%BA%B7t-tr%C4%83ng-si%C3%AAu-m%E1%BA%B7t-tr%C4%83ng-tr%C4%83ng-tr%C3%B2n-5016058/"
+
+	Name: "Field"
+	Definition: "an area of land in the country used for growing crops or keeping animals in, usually surrounded by a fence, etc."
+	Image:"https://pixabay.com/vi/photos/h%C3%A0-lan-field-ho%C3%A0ng-h%C3%B4n-n%C3%B4ng-nghi%E1%BB%87p-4530545/"
+	
+}
+8.Entertainment
+{
+	Name: Film
+	Definition:"a series of moving pictures recorded with sound that tells a story, watched at a cinema or on a television or other device"
+	Image:"sounds that are arranged in a way that is pleasant or exciting to listen to. People sing music or play it on instruments."
+
+	Name: Comedy
+	Definition:"a play, film or TV show that is intended to be funny, usually with a happy ending; plays, films and TV shows of this type"
+	Image:"https://pixabay.com/vi/photos/munsters-jerry-gwynne-yvonne-decarlo-400991/"
+
+	Name: Game
+	Definition:"an activity that you do to have fun, often one that has rules and that you can win or lose; the equipment for a game"
+	Image:"https://pixabay.com/vi/photos/mario-nh%C3%A2n-v%E1%BA%ADt-tr%C3%B2-ch%C6%A1i-nintendo-1998595/"
+
+	Name: Music
+	Definition:"sounds that are arranged in a way that is pleasant or exciting to listen to. People sing music or play it on instruments."
+	Image:"https://pixabay.com/vi/photos/%C3%A2m-thanh-n%E1%BB%AF-c%C3%B4-g%C3%A1i-karaoke-15936/"
+
+	Name: Youtube
+	Definition::"?a website where people can watch and share videos"
+	Image:"https://pixabay.com/vi/photos/b%E1%BA%A1n-%E1%BB%91ng-%C4%91i%E1%BB%87n-tho%E1%BA%A1i-th%C3%B4ng-minh-566347/"
+
+	Name: Facebook
+	Definition:"a very popular social media website"
+	Image:"https://pixabay.com/vi/photos/facebook-%C4%91i%E1%BB%87n-tho%E1%BA%A1i-th%C3%B4ng-minh-566336/"
+
+	Name: Web
+	Definition: " a system for finding information on the internet, in which documents are connected to other documents"
+	Image:"https://pixabay.com/vi/photos/fortnite-tr%C3%B2-ch%C6%A1i-video-tr%C3%B2-ch%C6%A1i-4682621/"
+
+	Name: Magazine
+	Definition:"a type of large thin book with a paper cover that you can buy every week or month, containing articles, photographs, etc., often on a particular topic; a similar collection of articles, etc. that appears regularly online"
+	Image:"https://pixabay.com/vi/photos/b%C3%A1o-l%E1%BB%8Bch-s%E1%BB%AD-%C4%91%C3%A1m-c%C6%B0%E1%BB%9Bi-ho%C3%A0ng-gia-433592/"
+
+	Name: Golf
+	Definition:" game played over a large area of ground using sticks with a special shape to hit a small hard ball (a golf ball) into a series of 9 or 18 holes, using as few shots as possible"
+	Image:"https://pixabay.com/vi/photos/s%C3%A2n-golf-qu%E1%BA%A3-b%C3%B3ng-golf-2571830/"
+
+	Name: Football
+	Definition:"a game played by two teams of 11 players, using a round ball that players kick up and down the playing field. Teams try to kick the ball into the other team’s goal."
+	Image:	"https://pixabay.com/vi/photos/con-b%C3%B3ng-%C4%91%C3%A1-ch%C6%A1i-%C4%91%C3%A1-613199/"
+	
+}
+9.Emotions
+{
+	Name: Angry
+	Definition:" having strong feelings about something that you dislike very much or about an unfair situation"
+	Image:"https://pixabay.com/vi/photos/t%E1%BB%A9c-gi%E1%BA%ADn-x%E1%BA%A5u-b%E1%BB%8B-c%C3%B4-l%E1%BA%ADp-nguy-hi%E1%BB%83m-18615/"
+
+	Name: Stress
+	Definition:" pressure or worry caused by the problems in somebody’s life"
+	Image:"https://pixabay.com/vi/photos/m%E1%BB%91i-quan-t%C3%A2m-lo-l%E1%BA%AFng-v%E1%BB%81-nh%E1%BB%AFng-4944455/"
+
+	Name: Confused
+	Definition:"unable to think clearly or to understand what is happening or what somebody is saying"
+	Image:"https://pixabay.com/vi/photos/ng%C6%B0%E1%BB%9Di-l%E1%BB%9Bn-kh%C3%B3-ch%E1%BB%8Bu-m%E1%BB%9D-ki%E1%BB%87t-s%E1%BB%A9c-1850268/"
+
+	Name: Afraid
+	Definition:"feeling fear; frightened because you think that you might be hurt or suffer"
+	Image:"https://pixabay.com/vi/photos/bu%E1%BB%93n-t%E1%BB%91i-s%E1%BB%A3-%E1%BA%A9n-face-s%E1%BB%A3-h%C3%A3i-516702/"
+
+	Name: Annoyed
+	Definition:"slightly angry"
+	Image:"https://pixabay.com/vi/photos/t%C3%ADch-c%E1%BB%B1c-con-hung-h%C4%83ng-tr%E1%BA%BB-em-b%C3%A9-1748701/"
+
+	Name: Anxious
+	Definition:"feeling worried or nervous"
+	Image:"https://pixabay.com/vi/photos/tr%E1%BA%A7m-ng%C3%A2m-lo-l%E1%BA%AFng-quan-t%C3%A2m-863669/"
+
+	Name: Sad
+	Definition:"unhappy or showing unhappiness"
+	Image:"https://pixabay.com/vi/photos/bu%E1%BB%93n-con-c%E1%BA%ADu-b%C3%A9-%C4%91%E1%BB%A9a-tr%E1%BA%BB-tr%E1%BA%BB-72217/"
+
+	Name: Bored
+	Definition:"?feeling tired and impatient because you have lost interest in somebody/something or because you have nothing to do"
+	Image:"https://pixabay.com/vi/photos/c%C3%B4-g%C3%A1i-ph%E1%BB%A5-n%E1%BB%AF-h%E1%BB%8Dc-h%E1%BB%8Fi-ch%C3%A1n-%C4%91%E1%BB%8Dc-1019305/"
+
+	Name: Scared
+	Definition:"?frightened of something or afraid that something bad might happen"
+	Image:"https://pixabay.com/vi/photos/s%E1%BB%A3-h%C3%A3i-lo-l%E1%BA%AFng-ho%E1%BA%A3ng-lo%E1%BA%A1n-gi%E1%BA%A3m-s%E1%BB%91c-2175161/"
+
+	Name: Shy
+	Definition:"(of people) nervous or embarrassed about meeting and speaking to other people"
+	Image:"https://pixabay.com/vi/photos/nh%C3%BAt-nh%C3%A1t-sexy-%C4%91%E1%BA%B9p-c%C3%B4-g%C3%A1i-t%C3%B3c-v%C3%A0ng-863056/"
+	
+}
+10.Equipments
+{
+	Name: Bulb
+	Definition:"the glass part that fits into an electric lamp, etc. to give light when it is switched on"
+	Image:"https://pixabay.com/vi/photos/%C4%91%C3%A8n-%C3%A1nh-s%C3%A1ng-b%C3%B3ng-%C4%91%C3%A8n-3489394/"
+
+	Name: Laptop
+	Definition:"a small computer that can work with a battery and be easily carried"
+	Image:"https://pixabay.com/vi/photos/v%C4%83n-ph%C3%B2ng-%C4%91%C3%B4-th%E1%BB%8B-neo-t%C3%A1o-xu-h%C6%B0%E1%BB%9Bng-1486358/"
+
+	Name: Bath
+	Definition:"a large, long container that you put water in and then get into to wash your whole body"
+	Image:"https://pixabay.com/vi/photos/ph%C3%B2ng-t%E1%BA%AFm-t%E1%BA%AFm-b%E1%BB%93n-t%E1%BA%AFm-nh%C3%A0-spa-4805846/"
+
+	Name: Rocket
+	Definition:"a spacecraft in the shape of a tube that is driven by a stream of gases let out behind it when fuel is burned inside"
+	Image:"https://pixabay.com/vi/photos/v%E1%BB%A5-n%E1%BB%95-off-t%C3%AAn-l%E1%BB%ADa-c%E1%BA%A5t-c%C3%A1nh-nasa-67649/"
+
+	Name: Shower
+	Definition:"a piece of equipment producing a flow of water that you stand under to wash yourself; the small room or part of a room that contains a shower"
+	Image:"https://pixabay.com/vi/photos/t%E1%BA%AFm-n%C6%B0%E1%BB%9Bc-%C6%B0%E1%BB%9Bt-ph%C3%B2ng-t%E1%BA%AFm-l%E1%BA%A1ch-nh%E1%BB%8F-653671/"
+
+	Name: Chair
+	Definition:" a piece of furniture for one person to sit on, with a back, a seat and four legs"
+	Image:"https://pixabay.com/vi/photos/gh%E1%BA%BF-b%C3%B3ng-l%E1%BB%85-k%E1%BB%B7-ni%E1%BB%87m-n%E1%BB%99i-th%E1%BA%A5t-tr%E1%BA%AFng-731171/"
+
+	Name: Table
+	Definition:"a piece of furniture that consists of a flat top supported by legs"
+	Image:"https://pixabay.com/vi/photos/c%E1%BB%95-b%C3%A0n-c%E1%BB%95-b%C3%A0n-c%C5%A9-g%E1%BB%97-%C4%91%E1%BB%93-n%E1%BB%99i-th%E1%BA%A5t-961102/"
+
+	Name: Motorbike
+	Definition:"a road vehicle with two wheels, driven by an engine, with one seat for the driver and often a seat for a passenger behind the driver"
+	Image:"https://pixabay.com/vi/photos/h%C3%A0nh-%C4%91%E1%BB%99ng-ng%C6%B0%E1%BB%9Di-l%E1%BB%9Bn-v%E1%BA%ADn-%C4%91%E1%BB%99ng-vi%C3%AAn-1868995/"
+
+	Name: Car
+	Definition:"a road vehicle with an engine and four wheels that can carry a small number of passengers"
+	Image:"https://pixabay.com/vi/photos/%C3%B4-t%C3%B4-xe-c%E1%BB%95-%C4%91i%E1%BB%83n-t%E1%BB%B1-%C4%91%E1%BB%99ng-c%E1%BB%95-1209732/"
+
+	Name: Television
+	Definition:"a piece of electrical equipment with a screen on which you can watch programmes with moving pictures and sounds"
+	Image:"https://pixabay.com/vi/photos/tv-tr%E1%BA%BB-em-phim-ho%E1%BA%A1t-h%C3%ACnh-phim-5017859/"
+}

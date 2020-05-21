@@ -11,6 +11,8 @@ import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
 import androidx.viewpager.widget.PagerAdapter;
 
+import com.example.cardie.Models.Card;
+
 import java.util.List;
 
 public class ViewPagerAdapter_SetCard extends PagerAdapter {

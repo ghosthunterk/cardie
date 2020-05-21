@@ -10,6 +10,8 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
+import com.example.cardie.Models.Card;
+
 import java.util.ArrayList;
 import java.util.List;
 
