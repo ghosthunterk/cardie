@@ -6,6 +6,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/definition_card_background"
         android:layout_marginHorizontal="10dp"
         android:layout_centerInParent="true"
         android:layout_width="350dp"
@@ -13,11 +14,13 @@
         app:cardBackgroundColor="@color/backgroundPearl"
         app:cardCornerRadius="20dp">
         <TextView
+            android:text="fff"
+            android:autoSizeTextType="uniform"
             android:id="@+id/test_definition"
             android:layout_gravity="center"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="ANDROID"
+            android:padding="20dp"
             android:textColor="@color/textWhite"
             android:textSize="43dp"
             android:fontFamily="@font/nunitolight">

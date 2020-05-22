@@ -5,6 +5,7 @@ import android.graphics.drawable.Drawable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -45,6 +46,7 @@ public class setlist_adapter extends RecyclerView.Adapter<setlist_adapter.MyView
 //        int mDrawableName = mData.get(position).getSetImgUrl(); //R.drawable.bunny_Sweden
 //        Drawable d = ResourcesCompat.getDrawable(mContext.getResources(),mDrawableName,null);
 //        holder.set_card.setBackground(d);
+        holder.set_card.setAnimation(AnimationUtils.loadAnimation(mContext,R.anim.fade_trans));
         holder.set_title.setText(mData.get(position).getSetName());
         //holder.imageView1.setBackgroundTintList(mContext.getResources().getColorStateList(R.color.backgroundbluelight,null));
         holder.set_card.setOnClickListener(new View.OnClickListener() {

@@ -1,6 +1,7 @@
 package com.example.cardie;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 import androidx.viewpager.widget.ViewPager;
 
 import android.app.Dialog;
@@ -11,6 +12,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.airbnb.lottie.LottieAnimationView;
 import com.example.cardie.Models.Card;
 
 import java.util.ArrayList;
@@ -77,6 +79,7 @@ public class TestMode1 extends AppCompatActivity {
                 currentCardNum.setText("Question " + String.valueOf(position+1)+"/" +(mData.size()));
                 choice1.setText(mData.get(position).getCardDefinition());
                 choice2.setText(mData.get(getRandomNum(0,mData.size()-1,position)).getCardDefinition());
+
             }
 
             @Override
@@ -87,6 +90,43 @@ public class TestMode1 extends AppCompatActivity {
         viewPager.addOnPageChangeListener(viewPagerListener); //Add Listener to ViewPager
         score=0;
         initAns();
+
+/*        final LottieAnimationView lottieAnimationWrong=findViewById(R.id.wrong_anim);
+        lottieAnimationWrong.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                lottieAnimationWrong.setSpeed(1);
+                lottieAnimationWrong.playAnimation();
+            }
+        });*/
+    }
+    public void anim_correct() {
+        final LottieAnimationView lottieAnimationCorrect=findViewById(R.id.correct_anim);
+        lottieAnimationCorrect.setSpeed(2);
+        lottieAnimationCorrect.playAnimation();
+
+        final Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                lottieAnimationCorrect.setSpeed(-2);
+                lottieAnimationCorrect.playAnimation();
+            }
+        }, 1000);
+    }
+    public void anim_wrong() {
+        final LottieAnimationView lottieAnimationWrong=findViewById(R.id.wrong_anim);
+        lottieAnimationWrong.setSpeed(2);
+        lottieAnimationWrong.playAnimation();
+
+        final Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                lottieAnimationWrong.setSpeed(-2);
+                lottieAnimationWrong.playAnimation();
+            }
+        }, 1000);
     }
 
     //GETRANDOM
@@ -116,35 +156,52 @@ public class TestMode1 extends AppCompatActivity {
                 if (pos<mData.size()-1){
                     if (choice1.getText().toString()==mData.get(pos).getCardWord()){
                         score++;
-                        myDialog.setContentView(R.layout.popup_answer_right);
-                        myDialog.show();
+                        /*myDialog.setContentView(R.layout.popup_answer_right);
+                        myDialog.show();*/
+                        anim_correct();
                     }
                     else {
-                        myDialog.setContentView(R.layout.popup_answer_wrong);
-                        myDialog.show();
+                        /*myDialog.setContentView(R.layout.popup_answer_wrong);
+                        myDialog.show();*/
+                        anim_wrong();
                     }
-                    int nextpos = pos + 1;
-                    viewPager.setCurrentItem(nextpos);
+                    final int nextpos = pos + 1;
+
                     if (getRandomNum(0,2,1)==2){
-                        choice1.setText(mData.get(nextpos).getCardWord());
-                        choice2.setText(mData.get(getRandomNum(0,mData.size()-1,nextpos)+1).getCardWord());
+                        Handler handler = new Handler();
+                        handler.postDelayed(new Runnable() {
+                            @Override
+                            public void run() {
+                                viewPager.setCurrentItem(nextpos);
+                                choice1.setText(mData.get(nextpos).getCardWord());
+                                choice2.setText(mData.get(getRandomNum(0,mData.size()-1,nextpos)+1).getCardWord());
+                            }
+                        }, 1500);
                     }
                     else {
-                        choice2.setText(mData.get(nextpos).getCardWord());
-                        choice1.setText(mData.get(getRandomNum(0,mData.size()-1,nextpos)+1).getCardWord());
+                        Handler handler = new Handler();
+                        handler.postDelayed(new Runnable() {
+                            @Override
+                            public void run() {
+                                viewPager.setCurrentItem(nextpos);
+                                choice2.setText(mData.get(nextpos).getCardWord());
+                                choice1.setText(mData.get(getRandomNum(0,mData.size()-1,nextpos)+1).getCardWord());
+                            }
+                        }, 1500);
                     }
                 }
                 else {
                     if (choice1.getText().toString()==mData.get(pos).getCardWord()){
                         score++;
-                        myDialog.setContentView(R.layout.popup_answer_right);
-                        myDialog.show();
+                       /* myDialog.setContentView(R.layout.popup_answer_right);
+                        myDialog.show();*/
+                        anim_correct();
                     }
                     else {
-                        myDialog.setContentView(R.layout.popup_answer_wrong);
-                        myDialog.show();
+                 /*       myDialog.setContentView(R.layout.popup_answer_wrong);
+                        myDialog.show();*/
+                        anim_wrong();
                     }
-                    System.out.println(score);
                     initResult(score);
                 }
             }
@@ -159,41 +216,62 @@ public class TestMode1 extends AppCompatActivity {
                 if (pos<mData.size()-1){
                     if (choice2.getText().toString()==mData.get(pos).getCardWord()){
                         score++;
-                        myDialog.setContentView(R.layout.popup_answer_right);
-                        myDialog.show();
+/*                        myDialog.setContentView(R.layout.popup_answer_right);
+                        myDialog.show();*/
+                        anim_correct();
                     }
                     else {
-                        myDialog.setContentView(R.layout.popup_answer_wrong);
-                        myDialog.show();
+/*                        myDialog.setContentView(R.layout.popup_answer_wrong);
+                        myDialog.show();*/
+                        anim_wrong();
                     }
-                    int nextpos = pos + 1;
-                    viewPager.setCurrentItem(nextpos);
+                    final int nextpos = pos + 1;
+
                     if (getRandomNum(0,2,1)==2){
-                        choice1.setText(mData.get(nextpos).getCardWord());
-                        choice2.setText(mData.get(getRandomNum(0,mData.size()-1,nextpos)+1).getCardWord());
+                        Handler handler = new Handler();
+                        handler.postDelayed(new Runnable() {
+                            @Override
+                            public void run() {
+                                viewPager.setCurrentItem(nextpos);
+                                choice1.setText(mData.get(nextpos).getCardWord());
+                                choice2.setText(mData.get(getRandomNum(0,mData.size()-1,nextpos)+1).getCardWord());
+                            }
+                        }, 1500);
+
                     }
                     else {
-                        choice2.setText(mData.get(nextpos).getCardWord());
-                        choice1.setText(mData.get(getRandomNum(0,mData.size()-1,nextpos)+1).getCardWord());
+                        Handler handler = new Handler();
+                        handler.postDelayed(new Runnable() {
+                            @Override
+                            public void run() {
+                                viewPager.setCurrentItem(nextpos);
+                                choice2.setText(mData.get(nextpos).getCardWord());
+                                choice1.setText(mData.get(getRandomNum(0,mData.size()-1,nextpos)+1).getCardWord());
+                            }
+                        }, 1500);
+
                     }
                 }
                 else {
                     if (choice2.getText().toString()==mData.get(pos).getCardWord()){
                         score++;
-                        myDialog.setContentView(R.layout.popup_answer_right);
-                        myDialog.show();
+/*                        myDialog.setContentView(R.layout.popup_answer_right);
+                        myDialog.show();*/
+                        anim_correct();
                     }
                     else {
-                        myDialog.setContentView(R.layout.popup_answer_wrong);
-                        myDialog.show();
+/*                        myDialog.setContentView(R.layout.popup_answer_wrong);
+                        myDialog.show();*/
+                        anim_wrong();
                     }
-                    System.out.println(score);
                     initResult(score);
                 }
             }
 
         });
+
     }
+
     public void initResult(int score){
         System.out.println(score);
         Intent intent = new Intent(TestMode1.this,ResultScreen.class);
