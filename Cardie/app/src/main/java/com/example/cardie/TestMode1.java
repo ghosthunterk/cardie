@@ -6,6 +6,7 @@ import androidx.viewpager.widget.ViewPager;
 
 import android.app.Dialog;
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
@@ -159,11 +160,13 @@ public class TestMode1 extends AppCompatActivity {
                         /*myDialog.setContentView(R.layout.popup_answer_right);
                         myDialog.show();*/
                         anim_correct();
+
                     }
                     else {
                         /*myDialog.setContentView(R.layout.popup_answer_wrong);
                         myDialog.show();*/
                         anim_wrong();
+
                     }
                     final int nextpos = pos + 1;
 
@@ -196,11 +199,13 @@ public class TestMode1 extends AppCompatActivity {
                        /* myDialog.setContentView(R.layout.popup_answer_right);
                         myDialog.show();*/
                         anim_correct();
+
                     }
                     else {
                  /*       myDialog.setContentView(R.layout.popup_answer_wrong);
                         myDialog.show();*/
                         anim_wrong();
+
                     }
                     initResult(score);
                 }
@@ -219,11 +224,13 @@ public class TestMode1 extends AppCompatActivity {
 /*                        myDialog.setContentView(R.layout.popup_answer_right);
                         myDialog.show();*/
                         anim_correct();
+
                     }
                     else {
 /*                        myDialog.setContentView(R.layout.popup_answer_wrong);
                         myDialog.show();*/
                         anim_wrong();
+
                     }
                     final int nextpos = pos + 1;
 
@@ -258,11 +265,13 @@ public class TestMode1 extends AppCompatActivity {
 /*                        myDialog.setContentView(R.layout.popup_answer_right);
                         myDialog.show();*/
                         anim_correct();
+
                     }
                     else {
 /*                        myDialog.setContentView(R.layout.popup_answer_wrong);
                         myDialog.show();*/
                         anim_wrong();
+
                     }
                     initResult(score);
                 }
@@ -271,6 +280,9 @@ public class TestMode1 extends AppCompatActivity {
         });
 
     }
+
+
+
 
     public void initResult(int score){
         System.out.println(score);
