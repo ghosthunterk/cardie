@@ -3,6 +3,7 @@ package com.example.cardie;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
@@ -95,8 +96,19 @@ public class Welcome extends AppCompatActivity {
                                                                         handler.postDelayed(new Runnable() {
                                                                             @Override
                                                                             public void run() {
-                                                                                Intent intent = new Intent(Welcome.this,LoginScreen.class);
-                                                                                startActivity(intent);
+                                                                                SharedPreferences sharedPref
+                                                                                        = getSharedPreferences("UserProfile",
+                                                                                        MODE_PRIVATE);
+                                                                                String username = sharedPref.getString("username","");
+                                                                                if (username.isEmpty()) {
+                                                                                    Intent intent = new Intent(Welcome.this, LoginScreen.class);
+                                                                                    startActivity(intent);
+                                                                                }
+                                                                                else
+                                                                                {
+                                                                                    Intent intent = new Intent(Welcome.this, setlist_main.class);
+                                                                                    startActivity(intent);
+                                                                                }
                                                                             }
                                                                         }, 2500);
                                                                     }

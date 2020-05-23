@@ -7,7 +7,7 @@ const DATABASE_NAME = 'Cardie';
 const bodyParser = require('body-parser');
 var app = express();
 // app.use(bodyParser.json());
-// app.use(bodyParser.urlencoded({extended:true}));
+app.use(bodyParser.urlencoded({extended:true}));
 // let MongoClient = mongodb.MongoClient;
 
 // app.use(express.json);
@@ -107,36 +107,76 @@ MongoClient.connect(url, {useNewUrlParser: true}, function(err, client){
 
          	});
          }); 
-
-        app.post('/saveResult',(request,response)=>
+         
+        app.post('/add-card', (request,response)=>
         {
+            
             let data = request.body;
-            let email = data.email;
-            let test_day = data.test_day;
-            let test_cat = data.test_cat;
-            let test_score = data.test_score;
-            let Document =
-            {
-                "email": email,
-                "test_day":test_day,
-                "test_cat":test_cat,
-                "test_score":test_score 
-            }
-            let db = client.db(DATABASE_NAME);
-            db.collection('TestDetail').find({"email":email}).toArray(function(err,result)
-                {
-                    if (result!=null)
-                    {
-                        db.collection('TestDetail').updateOne({"email":email,"test_cat":test_cat,"test_day":test_day},
-                                                    {$set: {"test_score":test_score}});
-                    }
-                    else{ 
-                        db.collection('TestDetail').insertOne(Document);
-                        response.send('done');
-                    }
-                });
+            console.log(data);
+            db = client.db(DATABASE_NAME);
+            db.collection('Card').insertOne(data,function(err, res) {
+                if (err) throw err;
+                console.log("1 card inserted in Card");
+                client.close();
+            });
             
         });
+
+
+        //UserStuffs
+        app.post('/add-user',(request,response)=>
+        {
+            data = request.body;
+            db = client.db(DATABASE_NAME);
+            db.collection('User').insertOne(data,function(err, res) {
+                if (err) throw err;
+                console.log("1 card inserted in Card");
+                client.close();
+            });
+        });
+
+        app.get('/user',(request,response)=>
+        {
+            data = request.query.Username;
+            db = client.db(DATABASE_NAME);
+            db.collection('User').find({username:data}),function(err, result) {
+                if (err) throw err;
+                console.log(result);
+                response.send(result);
+            });
+        });
+
+
+
+        // app.post('/saveResult',(request,response)=>
+        // {
+        //     let data = request.body;
+        //     let email = data.email;
+        //     let test_day = data.test_day;
+        //     let test_cat = data.test_cat;
+        //     let test_score = data.test_score;
+        //     let Document =
+        //     {
+        //         "email": email,
+        //         "test_day":test_day,
+        //         "test_cat":test_cat,
+        //         "test_score":test_score 
+        //     }
+        //     let db = client.db(DATABASE_NAME);
+        //     db.collection('TestDetail').find({"email":email}).toArray(function(err,result)
+        //         {
+        //             if (result!=null)
+        //             {
+        //                 db.collection('TestDetail').updateOne({"email":email,"test_cat":test_cat,"test_day":test_day},
+        //                                             {$set: {"test_score":test_score}});
+        //             }
+        //             else{ 
+        //                 db.collection('TestDetail').insertOne(Document);
+        //                 response.send('done');
+        //             }
+        //         });
+            
+        // });
 
         
     }

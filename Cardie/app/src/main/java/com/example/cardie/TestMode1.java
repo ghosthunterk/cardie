@@ -12,14 +12,22 @@ import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.airbnb.lottie.LottieAnimationView;
 import com.example.cardie.Models.Card;
+import com.example.cardie.RetrofitClient.API;
+import com.example.cardie.RetrofitClient.RetrofitClient;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Timer;
 import java.util.TimerTask;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+import retrofit2.Retrofit;
 
 public class TestMode1 extends AppCompatActivity {
     ViewPagerAdapter_SetResult Adapter;
@@ -51,45 +59,59 @@ public class TestMode1 extends AppCompatActivity {
         mySetName=findViewById(R.id.testmode1_setname);
         mySetName.setText(str);
         mData=new ArrayList<>();
-        String imageurl = "https://www.aldergrovestar.com/wp-content/uploads/2020/02/20592275_web1_Langley-Weather-Sun-Clear-Sky-Skies.jpg";
-        mData.add(new Card("C01","Cat","Cute","Noun",imageurl));
-        mData.add(new Card("C01","Dog","Friendly","Noun",imageurl));
-        mData.add(new Card("C01","Classification","What","Noun",imageurl));
-        mData.add(new Card("C01","Cat","Cute","Noun",imageurl));
-        mData.add(new Card("C01","Dog","Friendly","Noun",imageurl));
-        mData.add(new Card("C01","Classification","What","Noun",imageurl));
-        mData.add(new Card("C01","Cat","Cute","Noun",imageurl));
-        mData.add(new Card("C01","Dog","Friendly","Noun",imageurl));
-        mData.add(new Card("C01","Classification","What","Noun",imageurl));
         currentCardNum.setText("Question " + String.valueOf(1)+"/"+(mData.size()));
         choice1.setText(mData.get(0).getCardWord());
         choice2.setText(mData.get(getRandomNum(0,mData.size()-1,0)).getCardWord());
-        Adapter = new ViewPagerAdapter_SetResult(TestMode1.this,mData);
-        viewPager = findViewById(R.id.viewPager_testmode1);
-        viewPager.setAdapter(Adapter);
         myDialog=new Dialog(this);
-        // Declare Event's Listener
-        ViewPager.OnPageChangeListener viewPagerListener = new ViewPager.OnPageChangeListener() {
+        //Get data from API
+        Retrofit retrofit = RetrofitClient.getInstance();
+        API api = retrofit.create(API.class);
+        Call<List<Card>> call = api.getCardsBySet(mySetName.getText().toString());
+        call.enqueue(new Callback<List<Card>>() {
             @Override
-            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+            public void onResponse(Call<List<Card>> call, Response<List<Card>> response) {
+                for (Card card:response.body())
+                {
+                    mData.add(card);
+                }
+                Toast.makeText(getApplicationContext(),String.valueOf(mData.size()), Toast.LENGTH_LONG).show();
 
+                Adapter = new ViewPagerAdapter_SetResult(TestMode1.this,mData);
+                viewPager = findViewById(R.id.viewPager_testmode1);
+                viewPager.setAdapter(Adapter);
+
+
+                // Declare Event's Listener
+                ViewPager.OnPageChangeListener viewPagerListener = new ViewPager.OnPageChangeListener() {
+                    @Override
+                    public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+
+                    }
+
+                    @Override
+                    public void onPageSelected(int position) {
+                        pos=position;
+                        currentCardNum.setText("Question " + String.valueOf(position+1)+"/" +(mData.size()));
+                        choice1.setText(mData.get(position).getCardDefinition());
+                        choice2.setText(mData.get(getRandomNum(0,mData.size()-1,position)).getCardDefinition());
+
+                    }
+
+                    @Override
+                    public void onPageScrollStateChanged(int state) {
+
+                    }
+                };
+                viewPager.addOnPageChangeListener(viewPagerListener); //Add Listener to ViewPager
             }
 
             @Override
-            public void onPageSelected(int position) {
-                pos=position;
-                currentCardNum.setText("Question " + String.valueOf(position+1)+"/" +(mData.size()));
-                choice1.setText(mData.get(position).getCardDefinition());
-                choice2.setText(mData.get(getRandomNum(0,mData.size()-1,position)).getCardDefinition());
-
+            public void onFailure(Call<List<Card>> call, Throwable t) {
+                Toast.makeText(getApplicationContext(), t.getMessage(), Toast.LENGTH_LONG).show();
             }
+        });
 
-            @Override
-            public void onPageScrollStateChanged(int state) {
 
-            }
-        };
-        viewPager.addOnPageChangeListener(viewPagerListener); //Add Listener to ViewPager
         score=0;
         initAns();
 

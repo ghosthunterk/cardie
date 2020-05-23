@@ -4,6 +4,8 @@ import com.example.cardie.Models.Card;
 import com.example.cardie.Models.CardieSet;
 import com.example.cardie.Models.Card;
 import com.example.cardie.Models.CardieSet;
+import com.example.cardie.Models.User;
+import com.example.cardie.UserProfile;
 
 import java.util.List;
 
@@ -33,6 +35,13 @@ public interface API {
     @GET("/card-by-set")
     Call<List<Card>> getCardsBySet(@Query("SetName") String SetName);
 
+    @GET("/user")
+    Call<User> getUserProfile(@Query("Username") String username);
+
+    @FormUrlEncoded
+    @POST("/add-user")
+    Call<String> addUser(@Field("user") String username);
+
 //    @GET("getData/history?")
 //    Call<List<UserHistory>> getUserHistory(@Query("email") String email);
 
@@ -42,4 +51,7 @@ public interface API {
     @FormUrlEncoded
     @POST("/add-card")
     Call<Card> addCard(@Field("Name") String CardName, @Field("Definition") String CardDefinition,@Field("Img") String cardImg, @Field("Type") String CardType);
+
+
+
 }
