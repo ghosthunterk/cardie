@@ -36,6 +36,8 @@ public class Welcome extends AppCompatActivity {
             public void onClick(View v) {
                 splash.setSpeed(2);
                 splash.playAnimation();
+                splash.setEnabled(false);
+                splash.setClickable(false);
                 final Handler handler = new Handler();
                 handler.postDelayed(new Runnable() {
                     @Override
@@ -56,6 +58,7 @@ public class Welcome extends AppCompatActivity {
                                         gotyou.setVisibility(View.VISIBLE);
                                         gotyou.setSpeed(2);
                                         gotyou.playAnimation();
+
                                         gotyou.setRepeatCount(9999);
                                         description.setText("Don't worry, we've got you covered");
                                         gotyou.setOnClickListener(new View.OnClickListener() {
@@ -65,15 +68,20 @@ public class Welcome extends AppCompatActivity {
                                                     @Override
                                                     public void run() {
                                                         gotyou.setVisibility(View.GONE);
+                                                        gotyou.setEnabled(false);
+                                                        gotyou.setClickable(false);
                                                         card.setVisibility(View.VISIBLE);
                                                         card.setSpeed(1);
                                                         card.playAnimation();
+
                                                         card.setRepeatCount(9999);
                                                         description.setText("Our Cardie app provides you with intensive flash cards system");
                                                         card.setOnClickListener(new View.OnClickListener() {
                                                             @Override
                                                             public void onClick(View v) {
                                                                 card.setVisibility(View.GONE);
+                                                                card.setEnabled(false);
+                                                                card.setClickable(false);
                                                                 start.setVisibility(View.VISIBLE);
                                                                 description.setText("Let's get started");
                                                                 start.setOnClickListener(new View.OnClickListener() {
@@ -82,6 +90,8 @@ public class Welcome extends AppCompatActivity {
                                                                         mp.start();
                                                                         start.setSpeed(1);
                                                                         start.playAnimation();
+                                                                        start.setEnabled(false);
+                                                                        start.setClickable(false);
                                                                         handler.postDelayed(new Runnable() {
                                                                             @Override
                                                                             public void run() {

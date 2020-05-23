@@ -57,7 +57,7 @@
             app:lottie_rawRes="@raw/wegotyoucovered"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="100dp"
-            android:layout_width="300dp"
+            android:layout_width="match_parent"
             android:layout_height="400dp">
         </com.airbnb.lottie.LottieAnimationView>
     </LinearLayout>
@@ -72,7 +72,7 @@
             app:lottie_rawRes="@raw/cardiewilldoit"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="100dp"
-            android:layout_width="300dp"
+            android:layout_width="match_parent"
             android:layout_height="400dp">
         </com.airbnb.lottie.LottieAnimationView>
     </LinearLayout>
@@ -87,7 +87,7 @@
             app:lottie_rawRes="@raw/start"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="100dp"
-            android:layout_width="300dp"
+            android:layout_width="match_parent"
             android:layout_height="400dp">
         </com.airbnb.lottie.LottieAnimationView>
     </LinearLayout>

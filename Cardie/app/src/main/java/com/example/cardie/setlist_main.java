@@ -44,6 +44,7 @@ public class setlist_main extends AppCompatActivity implements SetListener {
         totalset = findViewById(R.id.total_sets);
         int bg = R.drawable.card_round_corner_bluelight;
         SetList = new ArrayList<>();
+        SetList.add(new CardieSet("1235","set1",bg,10,"1234",3));
       /*  SetList.add(new CardieSet("1235","set1",bg,10,"1234",3));
         SetList.add(new CardieSet("1235","set1",bg,10,"1234",3));
         SetList.add(new CardieSet("1235","set1",bg,10,"1234",3));
