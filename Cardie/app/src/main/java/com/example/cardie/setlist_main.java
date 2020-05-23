@@ -42,35 +42,7 @@ public class setlist_main extends AppCompatActivity implements SetListener {
             }
         });
         totalset = findViewById(R.id.total_sets);
-        int bg = R.drawable.card_round_corner_bluelight;
         SetList = new ArrayList<>();
-      /*  SetList.add(new CardieSet("1235","set1",bg,10,"1234",3));
-        SetList.add(new CardieSet("1235","set1",bg,10,"1234",3));
-        SetList.add(new CardieSet("1235","set1",bg,10,"1234",3));
-        SetList.add(new CardieSet("1235","set1",bg,10,"1234",3));
-        SetList.add(new CardieSet("1235","set1",bg,10,"1234",3));
-        SetList.add(new CardieSet("1235","set1",bg,10,"1234",3));
-        SetList.add(new CardieSet("1235","set1",bg,10,"1234",3));
-        SetList.add(new CardieSet("1235","set1",bg,10,"1234",3));
-        SetList.add(new CardieSet("1235","set1",bg,10,"1234",3));
-        SetList.add(new CardieSet("1235","set1",bg,10,"1234",3));
-        SetList.add(new CardieSet("1235","set1",bg,10,"1234",3));
-        SetList.add(new CardieSet("1235","set1",bg,10,"1234",3));
-        SetList.add(new CardieSet("1235","set1",bg,10,"1234",3));
-        SetList.add(new CardieSet("1235","set1",bg,10,"1234",3));
-        SetList.add(new CardieSet("1235","set1",bg,10,"1234",3));*/
-//        setlist.add(new CardieSet("1235","set",bg,10,"1234",2));
-//        setlist.add(new CardieSet("1235","set",bg,10,"1234",1));
-//        /*setlist.add(new CardieSet("1235","set",bg,10,"1234"));
-//        setlist.add(new CardieSet("1235","set",bg,10,"1234"));
-//        setlist.add(new CardieSet("1235","set",bg,10,"1234"));
-//        setlist.add(new CardieSet("1235","set",bg,10,"1234"));
-//        setlist.add(new CardieSet("1235","set",bg,10,"1234"));
-//        setlist.add(new CardieSet("1235","set",bg,10,"1234"));
-//        setlist.add(new CardieSet("1235","set",bg,10,"1234"));
-//        setlist.add(new CardieSet("1235","set",bg,10,"1234"));
-//        setlist.add(new CardieSet("1235","set",bg,10,"1234"));
-//        setlist.add(new CardieSet("1235","set",bg,10,"1234"));*/
 
         //Get data from API
         Retrofit retrofit = RetrofitClient.getInstance();
@@ -84,8 +56,13 @@ public class setlist_main extends AppCompatActivity implements SetListener {
                     SetList.add(set);
                     System.out.println(set.getSetName());
                 }
-                Toast.makeText(getApplicationContext(),String.valueOf(SetList.size()), Toast.LENGTH_SHORT).show();
-
+//                Toast.makeText(getApplicationContext(),String.valueOf(SetList.size()), Toast.LENGTH_SHORT).show();
+                totalset.setText(String.valueOf(SetList.size()));
+                RecyclerView Set_RV_myset =  findViewById(R.id.recyclerview_myset);
+                setlist_adapter Set_Adapter_myset = new setlist_adapter(setlist_main.this.getApplicationContext(), SetList,setlist_main.this);
+                LinearLayoutManager linearLayoutManager_myset = new LinearLayoutManager(setlist_main.this.getApplicationContext(),RecyclerView.VERTICAL,false);
+                Set_RV_myset.setLayoutManager(linearLayoutManager_myset);
+                Set_RV_myset.setAdapter(Set_Adapter_myset);
             }
 
             @Override
@@ -95,12 +72,7 @@ public class setlist_main extends AppCompatActivity implements SetListener {
         });
 
         // My set
-        totalset.setText(String.valueOf(SetList.size()));
-        RecyclerView Set_RV_myset =  findViewById(R.id.recyclerview_myset);
-        setlist_adapter Set_Adapter_myset = new setlist_adapter(this, SetList,this);
-        LinearLayoutManager linearLayoutManager_myset = new LinearLayoutManager(this,RecyclerView.VERTICAL,false);
-        Set_RV_myset.setLayoutManager(linearLayoutManager_myset);
-        Set_RV_myset.setAdapter(Set_Adapter_myset);
+
 
 
         //Explore set
