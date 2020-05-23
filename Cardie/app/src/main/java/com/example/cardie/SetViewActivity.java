@@ -133,6 +133,7 @@ public class SetViewActivity extends AppCompatActivity {
     }
     public void addcard(){
         Intent intent = new Intent(SetViewActivity.this,AddCard.class);
+        intent.putExtra("SetName",setName.getText());
         startActivity(intent);
     }
 }

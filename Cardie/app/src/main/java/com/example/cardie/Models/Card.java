@@ -1,5 +1,7 @@
 package com.example.cardie.Models;
 
+import androidx.annotation.Nullable;
+
 import com.google.gson.annotations.SerializedName;
 
 public class Card {
@@ -34,14 +36,15 @@ public class Card {
         CardAudio = cardAudio;
         CardType = cardType;
     }
-    public Card(String cardId, String cardWord, String cardType, String cardImageUrl)
+    public Card(@Nullable  String cardId, String cardWord, String cardType, String cardImageUrl)
     {
         CardId = cardId;
         CardWord = cardWord;
         CardType = cardType;
         CardImageUrl = cardImageUrl;
     }
-    public Card(String cardId, String cardWord, String cardDefinition, String cardType, String cardImageUrl)
+
+    public Card(@Nullable String cardId, String cardWord, String cardDefinition, String cardType, String cardImageUrl)
     {
         CardId = cardId;
         CardWord = cardWord;
