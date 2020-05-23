@@ -131,7 +131,7 @@ MongoClient.connect(url, {useNewUrlParser: true}, function(err, client){
             db.collection('User').insertOne(data,function(err, res) {
                 if (err) throw err;
                 console.log("1 card inserted in Card");
-                client.close();
+                // client.close();
             });
         });
 
@@ -141,8 +141,17 @@ MongoClient.connect(url, {useNewUrlParser: true}, function(err, client){
             db = client.db(DATABASE_NAME);
             db.collection('User').find({username:data}).toArray(function(err, result) {
                 if (err) throw err;
-                console.log(result);
-                response.send(result);
+                if (result.length>0)
+                {
+                    console.log('found');
+                    response.status(200).send();
+                }
+                else 
+                {   
+                    console.log('not found');
+                    response.status(404).send();
+                // client.close();
+                }
             });
         });
 

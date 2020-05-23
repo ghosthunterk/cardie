@@ -51,20 +51,17 @@ public class LoginScreen extends AppCompatActivity {
                     call.enqueue(new Callback<User>() {
                                      @Override
                                      public void onResponse(Call<User> call, Response<User> response) {
-                                         User newUser = response.body();
-                                         if (newUser.getUsername()==str)
-                                         {
-                                             Toast.makeText(LoginScreen.this, "Username has existed", Toast.LENGTH_LONG).show();
-                                             username.setText("");
+                                         if (response.code()==200) {
+                                                 Toast.makeText(LoginScreen.this, "Username has existed", Toast.LENGTH_LONG).show();
+                                                 username.setText("");
                                          }
-                                         else
+                                         else if (response.code()==404)
                                          {
                                              SharedPreferences.Editor editor = getSharedPreferences("UserProfile", MODE_PRIVATE).edit();
-                                             editor.putString("username",str);
+                                             editor.putString("username", str);
                                              editor.apply();
                                              addUserToDb(str);
                                              startActivity(intent);
-
                                          }
                                      }
 

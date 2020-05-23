@@ -9,8 +9,17 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.airbnb.lottie.LottieAnimationView;
+import com.example.cardie.Models.User;
+import com.example.cardie.RetrofitClient.API;
+import com.example.cardie.RetrofitClient.RetrofitClient;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+import retrofit2.Retrofit;
 
 public class Welcome extends AppCompatActivity {
 
@@ -100,14 +109,18 @@ public class Welcome extends AppCompatActivity {
                                                                                         = getSharedPreferences("UserProfile",
                                                                                         MODE_PRIVATE);
                                                                                 String username = sharedPref.getString("username","");
-                                                                                if (username.isEmpty()) {
+                                                                                if (username.isEmpty() || !checkDatabaseUser(username)) {
                                                                                     Intent intent = new Intent(Welcome.this, LoginScreen.class);
                                                                                     startActivity(intent);
                                                                                 }
                                                                                 else
                                                                                 {
-                                                                                    Intent intent = new Intent(Welcome.this, setlist_main.class);
-                                                                                    startActivity(intent);
+                                                                                    if (checkDatabaseUser(username)) {
+                                                                                        String welcome = "Welcome " + username;
+                                                                                        Toast.makeText(Welcome.this, welcome, Toast.LENGTH_LONG).show();
+                                                                                        Intent intent = new Intent(Welcome.this, setlist_main.class);
+                                                                                        startActivity(intent);
+                                                                                    }
                                                                                 }
                                                                             }
                                                                         }, 2500);
@@ -128,5 +141,32 @@ public class Welcome extends AppCompatActivity {
 
             }
         });
+    }
+
+    private boolean checkDatabaseUser(String str)
+    {
+        final boolean[] value = {false};
+        Retrofit retrofit = RetrofitClient.getInstance();
+        final API api = retrofit.create(API.class);
+        Call<User> call = api.getUserProfile(str);
+        call.enqueue(new Callback<User>() {
+                         @Override
+                         public void onResponse(Call<User> call, Response<User> response) {
+                             if (response.code()==200) {
+                                value[0] =true;
+                             }
+                             else if (response.code()==404)
+                             {
+                                value[0] = false;
+                             }
+                         }
+
+                         @Override
+                         public void onFailure(Call<User> call, Throwable t) {
+                             Toast.makeText(Welcome.this,t.getMessage(),Toast.LENGTH_LONG).show();
+                         }
+                     }
+        );
+        return value[0];
     }
 }
