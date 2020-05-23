@@ -139,7 +139,7 @@ MongoClient.connect(url, {useNewUrlParser: true}, function(err, client){
         {
             data = request.query.Username;
             db = client.db(DATABASE_NAME);
-            db.collection('User').find({username:data}),function(err, result) {
+            db.collection('User').find({username:data}).toArray(function(err, result) {
                 if (err) throw err;
                 console.log(result);
                 response.send(result);
