@@ -26,7 +26,7 @@ public interface API {
     @GET("/set")
     Call<CardieSet> getSet(@Query("SetName") String SetName);
 
-    @GET("/set-cards")
+    @GET("/card-by-set")
     Call<List<Card>> getCardsBySet(@Query("SetName") String SetName);
 
 //    @GET("getData/history?")

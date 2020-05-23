@@ -95,12 +95,11 @@ MongoClient.connect(url, {useNewUrlParser: true}, function(err, client){
             })
         });
 
-        app.get('/DayCat',(request,response)=>
+        app.get('/card-by-set',(request,response)=>
          {
-         	let Cat = request.query.Cat;
-         	let Day = request.query.Day;
+         	let SetName = request.query.SetName;
          	let db = client.db(DATABASE_NAME);
-         	db.collection('eFlashcard').find({"Category":Cat,"Day":Day}).toArray(function(err,result)
+         	db.collection('Card').find({Type:SetName}).toArray(function(err,result)
          	{
          		if (err) throw err;
          		console.log(result);
