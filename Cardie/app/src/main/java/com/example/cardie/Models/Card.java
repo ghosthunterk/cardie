@@ -4,7 +4,7 @@ public class Card {
     private String CardId;
     private String CardWord;
     private String CardDefinition;
-    private int CardImageUrl;
+    private String CardImageUrl;
     private String CardTranslation;
     private String CardAudio;
     private String CardType;
@@ -19,7 +19,7 @@ public class Card {
 
     public Card()
     {}
-    public Card(String cardId, String cardWord, String cardType, String cardDefinition, int cardImageUrl, String cardTranslation, String cardAudio) {
+    public Card(String cardId, String cardWord, String cardType, String cardDefinition, String cardImageUrl, String cardTranslation, String cardAudio) {
         CardId = cardId;
         CardWord = cardWord;
         CardDefinition = cardDefinition;
@@ -28,14 +28,14 @@ public class Card {
         CardAudio = cardAudio;
         CardType = cardType;
     }
-    public Card(String cardId, String cardWord, String cardType, int cardImageUrl)
+    public Card(String cardId, String cardWord, String cardType, String cardImageUrl)
     {
         CardId = cardId;
         CardWord = cardWord;
         CardType = cardType;
         CardImageUrl = cardImageUrl;
     }
-    public Card(String cardId, String cardWord,String cardDefinition, String cardType, int cardImageUrl)
+    public Card(String cardId, String cardWord, String cardDefinition, String cardType, String cardImageUrl)
     {
         CardId = cardId;
         CardWord = cardWord;
@@ -68,11 +68,11 @@ public class Card {
         CardDefinition = cardDefinition;
     }
 
-    public int getCardImageUrl() {
+    public String getCardImageUrl() {
         return CardImageUrl;
     }
 
-    public void setCardImageUrl(int cardImageUrl) {
+    public void setCardImageUrl(String cardImageUrl) {
         CardImageUrl = cardImageUrl;
     }
 

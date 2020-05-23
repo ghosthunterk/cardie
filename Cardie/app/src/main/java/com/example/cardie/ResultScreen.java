@@ -37,7 +37,7 @@ public class ResultScreen extends AppCompatActivity {
         Intent intent =this.getIntent();
         String str=intent.getExtras().getString("score");
         Spinner spinner = findViewById(R.id.week_spinner);
-        final String week_selected=spinner.getSelectedItem().toString();
+        final int week_selected=(spinner.getSelectedItem().toString().charAt(0));
         correct.setText(str + "/"+intent.getExtras().getString("totalquestion"));
         timecount=findViewById(R.id.time_count);
         timecount.setText(intent.getExtras().getString("timer")+"s");
@@ -48,7 +48,7 @@ public class ResultScreen extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent (ResultScreen.this,setlist_main.class);
-                LearningReminder(Integer.valueOf(week_selected.charAt(0)));
+                LearningReminder(week_selected);
                 startActivity(intent);
 
             }
@@ -57,7 +57,7 @@ public class ResultScreen extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent (ResultScreen.this,setlist_main.class);
-                LearningReminder(Integer.valueOf(week_selected.charAt(0)));
+                LearningReminder(week_selected);
                 startActivity(intent);
 
             }
@@ -65,7 +65,8 @@ public class ResultScreen extends AppCompatActivity {
     }
 
     public void LearningReminder(int week){
-        Toast.makeText(this,"Reminder Set!", Toast.LENGTH_SHORT).show();
+        System.out.println(week);
+        Toast.makeText(this,String.valueOf(week), Toast.LENGTH_SHORT).show();
         Intent mIntent = new Intent(ResultScreen.this, ReminderBroadcast.class);
         PendingIntent pendingIntent = PendingIntent.getBroadcast(ResultScreen.this,0,mIntent,0);
         AlarmManager alarmManager = (AlarmManager) getSystemService(ALARM_SERVICE);

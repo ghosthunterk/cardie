@@ -16,6 +16,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class SetViewActivity extends AppCompatActivity {
+    private String[] imageUrls = new String[]{
+
+    };
     ViewPagerAdapter_SetCard Adapter;
     ViewPager viewPager;
     List<Card> mData;
@@ -28,6 +31,7 @@ public class SetViewActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_set_view);
+
         setName = findViewById(R.id.SetName);
         diffEasy = findViewById(R.id.diffEasy);
         diffMedium = findViewById(R.id.diffMedium);
@@ -40,9 +44,10 @@ public class SetViewActivity extends AppCompatActivity {
             }
         });
         mData = new ArrayList<>();
-        mData.add(new Card("C01","Cat","Noun",R.drawable.cat_standing));
-        mData.add(new Card("C01","Dog","Noun",R.drawable.cat_standing));
-        mData.add(new Card("C01","Classification","Noun",R.drawable.cat_standing));
+        String imageurl = "https://www.aldergrovestar.com/wp-content/uploads/2020/02/20592275_web1_Langley-Weather-Sun-Clear-Sky-Skies.jpg";
+        mData.add(new Card("C01","Cat","Noun",imageurl));
+        mData.add(new Card("C01","Dog","Noun",imageurl));
+        mData.add(new Card("C01","Classification","Noun",imageurl));
         //get information to display
         initialize();
         //Setup Viewpager
