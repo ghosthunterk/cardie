@@ -1,9 +1,15 @@
 package com.example.cardie.Models;
 
+import com.google.gson.annotations.SerializedName;
+
 public class Card {
+    @SerializedName("_id")
     private String CardId;
+    @SerializedName("Name")
     private String CardWord;
+    @SerializedName("Definition")
     private String CardDefinition;
+    @SerializedName("Img")
     private String CardImageUrl;
     private String CardTranslation;
     private String CardAudio;
