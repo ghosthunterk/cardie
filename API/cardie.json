@@ -1,0 +1,362 @@
+[
+  {
+    "Name": "Chef",
+    "Definition": "a person whose job is to cook, especially the most senior person in a restaurant, hotel, etc",
+    "Img": "https://pixabay.com/vi/photos/nh%C3%A0-b%E1%BA%BFp-%C4%91%E1%BA%A7u-b%E1%BA%BFp-th%E1%BB%B1c-ph%E1%BA%A9m-%C4%91%C3%A8n-81493/",
+    "Type": "Work"
+  },
+  {
+    "Name": "Teacher",
+    "Definition": "a person whose job is teaching, especially in a school",
+    "Img": "https://pixabay.com/vi/photos/gi%C3%A1o-vi%C3%AAn-n%E1%BB%AF-%C4%91%E1%BA%A1i-h%E1%BB%8Dc-sinh-vi%C3%AAn-1280966/",
+    "Type": "Work"
+  },
+  {
+    "Name": "Guitarist",
+    "Definition": "a person who plays the guitar.",
+    "Img": "https://pixabay.com/vi/photos/ban-nh%E1%BA%A1c-bu%E1%BB%95i-h%C3%B2a-nh%E1%BA%A1c-2179313/",
+    "Type": "Work"
+  },
+  {
+    "Name": "Waiter",
+    "Definition": "a person whose job is to serve customers at their tables in a restaurant, etc.",
+    "Img": "https://pixabay.com/vi/illustrations/nh%C3%A2n-v%E1%BA%ADt-ho%E1%BA%A1t-h%C3%ACnh-b%E1%BB%93i-b%C3%A0n-%C3%BD-t%C6%B0%E1%BB%9Fng-2947794/",
+    "Type": "Work"
+  },
+  {
+    "Name": "Doctor",
+    "Definition": "a person who has been trained in medical science, whose job is to treat people who are ill or injured",
+    "Img": "https://pixabay.com/vi/vectors/c%E1%BA%ADu-b%C3%A9-phim-ho%E1%BA%A1t-h%C3%ACnh-2027768/",
+    "Type": "Work"
+  },
+  {
+    "Name": "Driver",
+    "Definition": "a person who drives a vehicle",
+    "Img": "https://pixabay.com/vi/photos/xe-%C4%91%E1%BA%A1p-cu%E1%BB%99c-%C4%91ua-nhanh-xe-m%C3%A1y-biker-3319660/",
+    "Type": "Work"
+  },
+  {
+    "Name": "Farmer",
+    "Definition": "a person who owns or manages a farm",
+    "Img": "https://pixabay.com/vi/vectors/n%C3%B4ng-d%C3%A2n-lao-%C4%91%E1%BB%99ng-n%C3%B4ng-th%C3%B4n-148325/",
+    "Type": "Work"
+  },
+  {
+    "Name": "Photographer",
+    "Definition": "a person who takes photographs, especially as a job",
+    "Img": "https://pixabay.com/vi/vectors/ng%C6%B0%E1%BB%9Di-%C4%91%C3%A0n-%C3%B4ng-nhi%E1%BA%BFp-%E1%BA%A3nh-gia-37500/",
+    "Type": "Work"
+  },
+  {
+    "Name": "Lawyer",
+    "Definition": "a person who is trained and qualified to advise people about the law and to represent them in court, and to write legal documents",
+    "Img": "https://pixabay.com/vi/vectors/lu%E1%BA%ADt-s%C6%B0-m%C3%A0u-%C4%91en-v%C3%A0-tr%E1%BA%AFng-ng%C6%B0%E1%BB%9Di-28782/",
+    "Type": "Work"
+  },
+  {
+    "Name": "Engineer",
+    "Definition": "a person whose job involves designing and building engines, machines, roads, bridges, etc.",
+    "Img": "https://pixabay.com/vi/vectors/k%E1%BB%B9-s%C6%B0-ki%E1%BA%BFn-tr%C3%BAc-s%C6%B0-ng%C6%B0%E1%BB%9Di-k%E1%BA%BF-ho%E1%BA%A1ch-296438/",
+    "Type": "Work"
+  },
+  {
+    "Name": "Beef",
+    "Definition": "meat that comes from a cow",
+    "Img": "https://pixabay.com/vi/photos/b%C3%ADt-t%E1%BA%BFt-rumpsteak-li%E1%BB%87u-th%E1%BB%8Bt-b%C3%B2-2975323/",
+    "Type": "Food"
+  },
+  {
+    "Name": "Cupcake",
+    "Definition": "?a small cake, baked in a paper container that is like a cup in shape and often with icing on top",
+    "Img": "https://pixabay.com/vi/photos/b%C3%A1nh-n%C6%B0%E1%BB%9Bng-x%E1%BB%91p-n%C6%B0%E1%BB%9Bng-cupcake-ngon-1329679/",
+    "Type": "Food"
+  },
+  {
+    "Name": "Hotdog",
+    "Definition": "a hot sausage served in a long bread roll",
+    "Img": "https://pixabay.com/vi/photos/hotdog-th%E1%BB%B1c-ph%E1%BA%A9m-x%C3%BAc-x%C3%ADch-m%C3%B9-t%E1%BA%A1t-4589626/",
+    "Type": "Food"
+  },
+  {
+    "Name": "Salad",
+    "Definition": "a mixture of raw vegetables such as lettuce, tomato and cucumber, usually served with other food as part of a meal",
+    "Img": "https://pixabay.com/vi/photos/rau-di%E1%BA%BFp-h%E1%BB%97n-h%E1%BB%A3p-x%C3%A0-l%C3%A1ch-1812349/",
+    "Type": "Food"
+  },
+  {
+    "Name": "Soup",
+    "Definition": "?a liquid food made by boiling meat, vegetables, etc. in water, often eaten as the first course of a meal",
+    "Img": "https://pixabay.com/vi/photos/s%C3%BAp-b%C3%AD-ng%C3%B4-d%E1%BB%ABa-s%C3%BAp-b%C3%AD-ng%C3%B4-%C4%83n-chay-1787997/",
+    "Type": "Food"
+  },
+  {
+    "Name": "French Fry",
+    "Definition": "a long thin piece of potato fried in oil or fat",
+    "Img": "https://pixabay.com/vi/photos/khoai-t%C3%A2y-chi%C3%AAn-mu%E1%BB%91i-th%E1%BB%B1c-ph%E1%BA%A9m-923687/",
+    "Type": "Food"
+  },
+  {
+    "Name": "Chip",
+    "Definition": "a long thin piece of potato fried in oil or fat",
+    "Img": "https://pixabay.com/vi/photos/chip-munchies-pringles-843993/",
+    "Type": "Food"
+  },
+  {
+    "Name": "Pizza",
+    "Definition": "an Italian dish consisting of a flat round bread base with cheese, tomatoes, vegetables, meat, etc. on top",
+    "Img": "https://pixabay.com/vi/photos/b%C3%A1nh-pizza-th%E1%BB%B1c-ph%E1%BA%A9m-%C3%BD-n%C6%B0%E1%BB%9Bng-3007395/",
+    "Type": "Food"
+  },
+  {
+    "Name": "Spaghetti",
+    "Definition": "?pasta in the shape of long thin pieces that look like string when they are cooked",
+    "Img": "https://pixabay.com/vi/photos/spaghetti-m%C3%AC-%E1%BB%91ng-th%E1%BB%B1c-ph%E1%BA%A9m-nh%C3%A0-h%C3%A0ng-863304/",
+    "Type": "Food"
+  },
+  {
+    "Name": "Turkey",
+    "Definition": "a large bird that is often kept for its meat, eaten especially at Christmas in the UK and at Thanksgiving in the US",
+    "Img": "https://pixabay.com/vi/photos/g%C3%A0-t%C3%A2y-th%E1%BB%B1c-ph%E1%BA%A9m-t%E1%BA%A1-%C6%A1n-truy%E1%BB%81n-th%E1%BB%91ng-5069219/",
+    "Type": "Food"
+  },
+  {
+    "Name": "Milkshake",
+    "Definition": "?a drink made of milk, and sometimes ice cream, with the added taste of fruit or chocolate, which is mixed or shaken until it is full of bubbles",
+    "Img": "https://pixabay.com/vi/vectors/milkshake-n%C3%A2u-s%C3%B4-c%C3%B4-la-r%C6%A1m-u%E1%BB%91ng-34316/",
+    "Type": "Drink"
+  },
+  {
+    "Name": "Tea",
+    "Definition": "the dried leaves (called tea leaves) of the tea bus",
+    "Img": "https://pixabay.com/vi/vectors/tr%C3%A0-teabag-c%E1%BB%91c-r%E1%BB%97ng-k%C3%ADnh-25198/",
+    "Type": "Drink"
+  },
+  {
+    "Name": "Coffee",
+    "Definition": "a hot drink made from coffee powder and boiling water. It may be drunk with milk and/or sugar added.",
+    "Img": "https://pixabay.com/vi/vectors/c%C3%A0-ph%C3%AA-c%E1%BB%91c-h%C3%BAt-thu%E1%BB%91c-n%C3%B3ng-u%E1%BB%91ng-34251/",
+    "Type": "Drink"
+  },
+  {
+    "Name": "Beer",
+    "Definition": "an alcoholic drink made from malt with hops added to give it taste. There are many types of beer.",
+    "Img": "https://pixabay.com/vi/vectors/bia-c%E1%BB%91c-%C4%91%E1%BA%A7y-%C4%91%E1%BB%A7-b%E1%BB%8Dt-u%E1%BB%91ng-k%C3%ADnh-26722/",
+    "Type": "Drink"
+  },
+  {
+    "Name": "Hot chocolate",
+    "Definition": "a drink made by mixing chocolate powder with hot water or milk; a cup of this drink",
+    "Img": "https://pixabay.com/vi/vectors/s%C3%B4-c%C3%B4-la-n%C3%B3ng-pha-c%C3%A0-ph%C3%AA-s%C3%B4-c%C3%B4-la-576418/",
+    "Type": "Drink"
+  },
+  {
+    "Name": "Milk",
+    "Definition": "the white liquid produced by cows, goats and some other animals as food for their young and used as a drink by humans",
+    "Img": "https://pixabay.com/vi/vectors/s%E1%BB%AFa-chai-n%C6%B0%E1%BB%9Bc-gi%E1%BA%A3i-kh%C3%A1t-tr%E1%BA%AFng-576439/",
+    "Type": "Drink"
+  },
+  {
+    "Name": "Soda",
+    "Definition": "fizzy water (= water with bubbles) used as a drink on its own or to mix with alcoholic drinks or fruit juice (originally made with sodium bicarbonate)",
+    "Img": "htpps://pixabay.com/vi/vectors/s%C3%A1u-g%C3%B3i-%C4%91%E1%BB%93-u%E1%BB%91ng-n%C6%B0%E1%BB%9Bc-ng%E1%BB%8Dt-bia-lon-25200/",
+    "Type": "Drink"
+  },
+  {
+    "Name": "Juice",
+    "Definition": "the liquid that comes from fruit or vegetables; a drink made from this",
+    "Img": "https://pixabay.com/vi/vectors/t%C3%A0i-s%E1%BA%A3n-b%E1%BB%99-s%C6%B0u-t%E1%BA%ADp-tr%C3%B2-ch%C6%A1i-k%C3%ADnh-1296895/",
+    "Type": "Drink"
+  },
+  {
+    "Name": "Wine",
+    "Definition": "an alcoholic drink made from the juice of grapes that has been left to ferment. There are many different kinds of wine.",
+    "Img": "https://pixabay.com/vi/vectors/r%C6%B0%E1%BB%A3u-thanh-n%C6%B0%E1%BB%9Bc-gi%E1%BA%A3i-kh%C3%A1t-blanc-1031713/",
+    "Type": "Drink"
+  },
+  {
+    "Name": "Cocktail",
+    "Definition": "a drink usually made from a mixture of one or more spirits (= strong alcoholic drinks) and fruit juice. It can also be made without alcohol.",
+    "Img": "https://pixabay.com/vi/vectors/cocktail-margarita-martini-u%E1%BB%91ng-575631/",
+    "Type": "Drink"
+  },
+  {
+    "Name": "USA",
+    "Definition": "United States of America",
+    "Img": "https://pixabay.com/vi/photos/american-c%E1%BB%9D-ch%C3%BAng-t%C3%B4i-c%E1%BB%9D-c%E1%BB%9D-m%E1%BB%B9-301164/",
+    "Type": "Country"
+  },
+  {
+    "Name": "UK (United Kingdom)",
+    "Definition": "?United Kingdom",
+    "Img": "https://pixabay.com/vi/photos/anh-c%E1%BB%9D-ng%C3%B4n-ng%E1%BB%AF-bi%E1%BB%83u-t%C6%B0%E1%BB%A3ng-uk-4474567/",
+    "Type": "Country"
+  },
+  {
+    "Name": "Australia",
+    "Definition": "?a large island country and continent in the south-west Pacific Ocean. Its capital city is Canberra",
+    "Img": "https://pixabay.com/vi/photos/qu%E1%BB%91c-kh%C3%A1nh-%C3%BAc-c%E1%BB%9D-%C3%BAc-b%C3%A3i-bi%E1%BB%83n-1134930/",
+    "Type": "Country"
+  },
+  {
+    "Name": "Mexico",
+    "Definition": "a country in southern North America",
+    "Img": "https://pixabay.com/vi/photos/c%E1%BB%9D-mexico-mexican-bi%E1%BB%83u-t%C6%B0%E1%BB%A3ng-4550138/",
+    "Type": "Country"
+  },
+  {
+    "Name": "India",
+    "Definition": "?a country in southern Asia which used to be part of the British Empire. It became independent and a member of the Commonwealth in 1947.",
+    "Img": "https://pixabay.com/vi/photos/c%E1%BB%9D-%E1%BA%A5n-%C4%91%E1%BB%99-thi%C3%AAn-nhi%C3%AAn-qu%E1%BB%91c-k%E1%BB%B3-%E1%BA%A5n-%C4%91%E1%BB%99-3563332/",
+    "Type": "Country"
+  },
+  {
+    "Name": "France",
+    "Definition": "?a country in western Europe",
+    "Img": "https://pixabay.com/vi/photos/c%E1%BB%9D-ph%C3%A1p-ph%C3%A1p-c%E1%BB%9D-qu%E1%BB%91c-gia-1064395/",
+    "Type": "Country"
+  },
+  {
+    "Name": "China",
+    "Definition": "a country of eastern Asia bordering on the Pacific; the most populous country in the world; a republic whose capital is Beijing",
+    "Img": "https://pixabay.com/vi/photos/m%C3%A0u-%C4%91%E1%BB%8F-c%E1%BB%9D-ch%E1%BB%A7-ngh%C4%A9a-x%C3%A3-h%E1%BB%99i-1028364/",
+    "Type": "Country"
+  },
+  {
+    "Name": "Germany",
+    "Definition": "?a country in central Europe",
+    "Img": "https://pixabay.com/vi/photos/c%E1%BB%9D-%C4%91%E1%BB%A9c-m%C3%A0u-%C4%91en-%C4%91%E1%BB%8F-v%C3%A0ng-%C4%91%E1%BB%A9c-c%E1%BB%9D-3255128/",
+    "Type": "Country"
+  },
+  {
+    "Name": "Japan",
+    "Definition": "?a country consisting of a group of islands in eastern Asia",
+    "Img": "https://pixabay.com/vi/photos/%C3%A1-ch%C3%A2u-%C3%A1-m%C3%A0u-xanh-%C4%91%E1%BA%A5t-n%C6%B0%E1%BB%9Bc-c%E1%BB%9D-21442/",
+    "Type": "Country"
+  },
+  {
+    "Name": "Thailand",
+    "Definition": "a country in South East Asia",
+    "Img": "https://pixabay.com/vi/vectors/bi%C3%AAn-gi%E1%BB%9Bi-%C4%91%E1%BA%A5t-n%C6%B0%E1%BB%9Bc-c%E1%BB%9D-%C4%91%E1%BB%8Ba-l%C3%BD-2099230/",
+    "Type": "Country"
+  },
+  {
+    "Name": "Jeans",
+    "Definition": "trousers made of denim (= a type of strong cotton)",
+    "Img": "https://pixabay.com/vi/photos/m%C3%A0u-%C4%91en-c%C5%A9-l%E1%BB%8Fng-l%E1%BA%BBo-qu%E1%BA%A7n-jean-1146793/",
+    "Type": "Clothes"
+  },
+  {
+    "Name": "Kimono",
+    "Definition": "a traditional Japanese piece of clothing like a long loose dress with wide sleeves (= parts covering the arms), worn on formal occasions; a dressing gown or robe in this style",
+    "Img": "https://pixabay.com/vi/photos/th%E1%BB%9Di-trang-nh%E1%BA%ADt-b%E1%BA%A3n-kimono-1025375/",
+    "Type": "Clothes"
+  },
+  {
+    "Name": "Sari",
+    "Definition": "?a long piece of cloth that is wrapped around the body and worn as the main piece of clothing by women in South Asia",
+    "Img": "https://pixabay.com/vi/photos/saree-th%E1%BB%9Di-trang-l%E1%BB%A5a-v%C3%A1y-362756/",
+    "Type": "Clothes"
+  },
+  {
+    "Name": "Trousers",
+    "Definition": "a piece of clothing that covers the lower body and is divided into two parts to cover each leg separately",
+    "Img": "https://pixabay.com/vi/photos/c%E1%BA%ADu-b%C3%A9-ng%C6%B0%E1%BB%9Di-%C4%91%C3%A0n-%C3%B4ng-ng%C6%B0%E1%BB%9Di-nam-3637094/",
+    "Type": "Clothes"
+  },
+  {
+    "Name": "Jacket",
+    "Definition": "a piece of clothing worn on the top half of the body over a shirt, etc. that has arms and fastens down the front; a short, light coat",
+    "Img": "https://pixabay.com/vi/photos/jacket-%C3%A1o-kho%C3%A1t-ngo%C3%A0i-b%E1%BA%B1ng-da-947395/",
+    "Type": "Clothes"
+  },
+  {
+    "Name": "Dress",
+    "Definition": "a piece of women’s clothing that is made in one piece and covers the body down to the legs, sometimes reaching to below the knees, or to the ankles",
+    "Img": "https://pixabay.com/vi/photos/c%C3%B4-g%C3%A1i-v%C3%A1y-tr%E1%BA%AFng-ki%E1%BB%83u-t%C3%B3c-t%C3%B3c-1333640/",
+    "Type": "Clothes"
+  },
+  {
+    "Name": "T-shirt",
+    "Definition": "an informal shirt, usually with short sleeves (= arms) no collar or buttons, or just a few buttons at the top",
+    "Img": "https://pixabay.com/vi/photos/gi%E1%BA%A3-l%E1%BA%ADp-t-shirt-gi%E1%BA%A3-m%C3%A0u-xanh-2710535/",
+    "Type": "Clothes"
+  },
+  {
+    "Name": "Sweater",
+    "Definition": "a piece of clothing for the upper part of the body, made of wool or cotton, with long sleeves",
+    "Img": "https://pixabay.com/vi/photos/%C3%A1o-len-%C3%A1o-in-%E1%BA%A5n-m%C3%A0n-h%C3%ACnh-ngh%E1%BB%87-thu%E1%BA%ADt-1843619/",
+    "Type": "Clothes"
+  },
+  {
+    "Name": "Sneaker",
+    "Definition": "a shoe that you wear for sports or as informal clothing",
+    "Img": "https://pixabay.com/vi/photos/gi%C3%A0y-ch%C3%A2n-sneaker-gi%C3%A0y-th%E1%BB%83-thao-1028790/",
+    "Type": "Clothes"
+  },
+  {
+    "Name": "Sandal",
+    "Definition": "a type of light open shoe that is worn in warm weather. The top part consists of leather bands that fasten the sole to your foot.",
+    "Img": "https://pixabay.com/vi/photos/sandal-gi%C3%A0y-gi%C3%A0y-c%E1%BB%A7a-ph%E1%BB%A5-n%E1%BB%AF-1521473/",
+    "Type": "Clothes"
+  },
+  {
+    "Name": "Forest",
+    "Definition": "a large area of land that is thickly covered with trees",
+    "Img": "https://pixabay.com/vi/photos/c%C3%A2y-con-%C4%91%C6%B0%E1%BB%9Dng-%C4%91%C6%B0%E1%BB%9Dng-m%C3%B2n-c%C5%A9-%C4%91%C6%B0%E1%BB%9Dng-2897757/",
+    "Type": "Natures"
+  },
+  {
+    "Name": "Waterfall",
+    "Definition": "a place where a stream or river falls from a high place, for example over a cliff or rock",
+    "Img": "https://pixabay.com/vi/photos/triberg-th%C3%A1c-n%C6%B0%E1%BB%9Bc-r%E1%BB%ABng-%C4%91en-torrent-4984171/",
+    "Type": "Natures"
+  },
+  {
+    "Name": "Desert",
+    "Definition": "?a large area of land that has very little water and very few plants growing on it. Many deserts are covered by sand.",
+    "Img": "https://pixabay.com/vi/photos/sa-m%E1%BA%A1c-sahara-c%C3%A1t-c%E1%BA%A3nh-quan-kh%C3%B4-4134918/",
+    "Type": "Natures"
+  },
+  {
+    "Name": "Flower",
+    "Definition": "the coloured part of a plant from which the seed or fruit develops. Flowers usually grow at the end of a stem and last only a short time.",
+    "Img": "https://pixabay.com/vi/photos/mai-m%E1%BA%ADn-spring-flower-m%C3%B9a-xu%C3%A2n-4946160/",
+    "Type": "Natures"
+  },
+  {
+    "Name": "Island",
+    "Definition": "a piece of land that is completely surrounded by water",
+    "Img": "https://pixabay.com/vi/photos/%C4%91%E1%BA%A3o-san-h%C3%B4-b%C3%A3i-bi%E1%BB%83n-c%C3%A2y-c%E1%BB%8D-k%E1%BB%B3-ngh%E1%BB%89-2178747/",
+    "Type": "Natures"
+  },
+  {
+    "Name": "Lake",
+    "Definition": "a large area of water that is surrounded by land",
+    "Img": "https://pixabay.com/vi/photos/hallstatt-n%C3%BAi-%C3%A1o-lake-n%C3%BAi-cao-4495734/",
+    "Type": "Natures"
+  },
+  {
+    "Name": "'Mountain",
+    "Definition": "a very high hill, often with rocks near the top",
+    "Img": "https://pixabay.com/vi/photos/alps-%C4%91%E1%BA%A7u-n%C3%BAi-c%E1%BA%A3nh-quan-thi%C3%AAn-nhi%C3%AAn-4553488/",
+    "Type": "Natures"
+  },
+  {
+    "Name": "Sunset",
+    "Definition": "the time when the sun goes down and night begins",
+    "Img": "https://pixabay.com/vi/photos/ho%C3%A0ng-h%C3%B4n-bi%E1%BB%83n-b%E1%BA%A7u-tr%E1%BB%9Di-%C4%91%E1%BA%A1i-d%C6%B0%C6%A1ng-4376835/",
+    "Type": "Natures"
+  },
+  {
+    "Name": "Moon",
+    "Definition": " the round object that moves around the earth once every 27½ days and shines at night by light reflected from the sun",
+    "Img": "https://pixabay.com/vi/photos/m%E1%BA%B7t-tr%C4%83ng-si%C3%AAu-m%E1%BA%B7t-tr%C4%83ng-tr%C4%83ng-tr%C3%B2n-5016058/",
+    "Type": "Natures"
+  },
+  {
+    "Name": "Field",
+    "Definition": "an area of land in the country used for growing crops or keeping animals in, usually surrounded by a fence, etc.",
+    "Img": "https://pixabay.com/vi/photos/h%C3%A0-lan-field-ho%C3%A0ng-h%C3%B4n-n%C3%B4ng-nghi%E1%BB%87p-4530545/",
+    "Type": "Natures"
+  }
+]
