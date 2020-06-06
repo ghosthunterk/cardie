@@ -139,16 +139,19 @@ MongoClient.connect(url, {useNewUrlParser: true}, function(err, client){
         {
             data = request.query.Username;
             db = client.db(DATABASE_NAME);
-            db.collection('User').find({user:data}).toArray(function(err, result) {
+            db.collection('User').find({user:data}).limit(1).toArray(function(err, result) {
                 if (err) throw err;
                 if (result.length>0)
                 {
-                    console.log('found');
-                    response.status(200).send();
+                	console.log(result);
+                    console.log('found user');
+                    // response.send(result);
+                    response.status(200);
+                    response.send(result[0]);
                 }
                 else 
                 {   
-                    console.log('not found');
+                    console.log('not found user');
                     response.status(404).send();
                 // client.close();
                 }

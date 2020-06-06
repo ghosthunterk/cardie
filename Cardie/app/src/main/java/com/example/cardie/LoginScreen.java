@@ -52,11 +52,11 @@ public class LoginScreen extends AppCompatActivity {
                                      @Override
                                      public void onResponse(Call<User> call, Response<User> response) {
                                          System.out.println(response.code());
-                                         if (response.code()==200) {
+                                         if (Integer.valueOf(response.code())==200) {
                                                  Toast.makeText(LoginScreen.this, "Username has existed", Toast.LENGTH_LONG).show();
                                                  username.setText("");
                                          }
-                                         else if (response.code()==404)
+                                         else if (Integer.valueOf(response.code())==404)
                                          {
                                              SharedPreferences.Editor editor = getSharedPreferences("UserProfile", MODE_PRIVATE).edit();
                                              editor.putString("username", str);
