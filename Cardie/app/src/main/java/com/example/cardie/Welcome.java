@@ -22,125 +22,149 @@ import retrofit2.Response;
 import retrofit2.Retrofit;
 
 public class Welcome extends AppCompatActivity {
-
+    int count;
+    int c=0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_welcome);
-        final TextView touchhere = findViewById(R.id.welcome_touchhere);
-        final TextView description = findViewById(R.id.welcome_text);
-        final LottieAnimationView splash = findViewById(R.id.welcome_splash);
-        final LottieAnimationView tired = findViewById(R.id.welcome_writedown);
-        final LottieAnimationView gotyou = findViewById(R.id.welcome_gotyou);
-        final LottieAnimationView card = findViewById(R.id.welcome_cardie);
-        final LottieAnimationView start = findViewById(R.id.welcome_start);
+        SharedPreferences sharedPref
+                = getSharedPreferences("UserProfile",
+                MODE_PRIVATE);
+//        int isFirstTime = sharedPref.getInt("first-time",0);
+        int isFirstTime=0;
+        System.out.println(isFirstTime);
+        if (isFirstTime==0){
 
-
-        tired.setVisibility(View.GONE);
-        gotyou.setVisibility(View.GONE);
-        card.setVisibility(View.GONE);
-        start.setVisibility(View.GONE);
-        final MediaPlayer mp = MediaPlayer.create(this, R.raw.welcome);
-        splash.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                splash.setSpeed(2);
-                splash.playAnimation();
-                splash.setEnabled(false);
-                splash.setClickable(false);
-                final Handler handler = new Handler();
-                handler.postDelayed(new Runnable() {
+            setContentView(R.layout.activity_welcome);
+            final TextView touchhere = findViewById(R.id.welcome_touchhere);
+            final TextView description = findViewById(R.id.welcome_text);
+            final LottieAnimationView splash = findViewById(R.id.welcome_splash);
+            final LottieAnimationView tired = findViewById(R.id.welcome_writedown);
+            final LottieAnimationView gotyou = findViewById(R.id.welcome_gotyou);
+            final LottieAnimationView card = findViewById(R.id.welcome_cardie);
+            final LottieAnimationView start = findViewById(R.id.welcome_start);
+            tired.setVisibility(View.GONE);
+            gotyou.setVisibility(View.GONE);
+            card.setVisibility(View.GONE);
+            start.setVisibility(View.GONE);
+            if (count==0){
+                final MediaPlayer mp = MediaPlayer.create(this, R.raw.welcome);
+                splash.setOnClickListener(new View.OnClickListener() {
                     @Override
-                    public void run() {
-                        touchhere.setText("");
-                        tired.setVisibility(View.VISIBLE);
-                        tired.setSpeed(2);
-                        tired.playAnimation();
-                        tired.setRepeatCount(9999);
-                        description.setText("Tired of having to write down whenever you wanna remember something?");
-                        tired.setOnClickListener(new View.OnClickListener() {
+                    public void onClick(View v) {
+                        splash.setSpeed(2);
+                        splash.playAnimation();
+                        splash.setEnabled(false);
+                        splash.setClickable(false);
+                        final Handler handler = new Handler();
+                        handler.postDelayed(new Runnable() {
                             @Override
-                            public void onClick(View v) {
-                                handler.postDelayed(new Runnable() {
+                            public void run() {
+                                touchhere.setText("");
+                                tired.setVisibility(View.VISIBLE);
+                                tired.setSpeed(2);
+                                tired.playAnimation();
+                                tired.setRepeatCount(9999);
+                                description.setText("Tired of having to write down whenever you wanna remember something?");
+                                tired.setOnClickListener(new View.OnClickListener() {
                                     @Override
-                                    public void run() {
-                                        tired.setVisibility(View.GONE);
-                                        gotyou.setVisibility(View.VISIBLE);
-                                        gotyou.setSpeed(2);
-                                        gotyou.playAnimation();
-
-                                        gotyou.setRepeatCount(9999);
-                                        description.setText("Don't worry, we've got you covered");
-                                        gotyou.setOnClickListener(new View.OnClickListener() {
+                                    public void onClick(View v) {
+                                        handler.postDelayed(new Runnable() {
                                             @Override
-                                            public void onClick(View v) {
-                                                handler.postDelayed(new Runnable() {
-                                                    @Override
-                                                    public void run() {
-                                                        gotyou.setVisibility(View.GONE);
-                                                        gotyou.setEnabled(false);
-                                                        gotyou.setClickable(false);
-                                                        card.setVisibility(View.VISIBLE);
-                                                        card.setSpeed(1);
-                                                        card.playAnimation();
+                                            public void run() {
+                                                tired.setVisibility(View.GONE);
+                                                gotyou.setVisibility(View.VISIBLE);
+                                                gotyou.setSpeed(2);
+                                                gotyou.playAnimation();
 
-                                                        card.setRepeatCount(9999);
-                                                        description.setText("Our Cardie app provides you with intensive flash cards system");
-                                                        card.setOnClickListener(new View.OnClickListener() {
+                                                gotyou.setRepeatCount(9999);
+                                                description.setText("Don't worry, we've got you covered");
+                                                gotyou.setOnClickListener(new View.OnClickListener() {
+                                                    @Override
+                                                    public void onClick(View v) {
+                                                        handler.postDelayed(new Runnable() {
                                                             @Override
-                                                            public void onClick(View v) {
-                                                                card.setVisibility(View.GONE);
-                                                                card.setEnabled(false);
-                                                                card.setClickable(false);
-                                                                start.setVisibility(View.VISIBLE);
-                                                                description.setText("Let's get started");
-                                                                start.setOnClickListener(new View.OnClickListener() {
+                                                            public void run() {
+                                                                gotyou.setVisibility(View.GONE);
+                                                                gotyou.setEnabled(false);
+                                                                gotyou.setClickable(false);
+                                                                card.setVisibility(View.VISIBLE);
+                                                                card.setSpeed(1);
+                                                                card.playAnimation();
+
+                                                                card.setRepeatCount(9999);
+                                                                description.setText("Our Cardie app provides you with intensive flash cards system");
+                                                                card.setOnClickListener(new View.OnClickListener() {
                                                                     @Override
                                                                     public void onClick(View v) {
-                                                                        mp.start();
-                                                                        start.setSpeed(1);
-                                                                        start.playAnimation();
-                                                                        start.setEnabled(false);
-                                                                        start.setClickable(false);
-                                                                        handler.postDelayed(new Runnable() {
+                                                                        card.setVisibility(View.GONE);
+                                                                        card.setEnabled(false);
+                                                                        card.setClickable(false);
+                                                                        start.setVisibility(View.VISIBLE);
+                                                                        description.setText("Let's get started");
+                                                                        start.setOnClickListener(new View.OnClickListener() {
                                                                             @Override
-                                                                            public void run() {
-                                                                                SharedPreferences sharedPref
-                                                                                        = getSharedPreferences("UserProfile",
-                                                                                        MODE_PRIVATE);
-                                                                                String username = sharedPref.getString("username","");
-                                                                                if (username.isEmpty() || !checkDatabaseUser(username)) {
-                                                                                    Intent intent = new Intent(Welcome.this, LoginScreen.class);
-                                                                                    startActivity(intent);
-                                                                                }
-                                                                                else
-                                                                                {
-                                                                                    if (checkDatabaseUser(username)) {
-                                                                                        String welcome = "Welcome " + username;
-                                                                                        Toast.makeText(Welcome.this, welcome, Toast.LENGTH_LONG).show();
-                                                                                        Intent intent = new Intent(Welcome.this, setlist_main.class);
-                                                                                        startActivity(intent);
+                                                                            public void onClick(View v) {
+                                                                                mp.start();
+                                                                                start.setSpeed(1);
+                                                                                start.playAnimation();
+                                                                                start.setEnabled(false);
+                                                                                start.setClickable(false);
+                                                                                handler.postDelayed(new Runnable() {
+                                                                                    @Override
+                                                                                    public void run() {
+                                                                                        SharedPreferences sharedPref
+                                                                                                = getSharedPreferences("UserProfile",
+                                                                                                MODE_PRIVATE);
+                                                                                        String username = sharedPref.getString("username","");
+                                                                                        if (username.isEmpty() || !checkDatabaseUser(username)) {
+                                                                                            SharedPreferences.Editor editor = getSharedPreferences("UserProfile", MODE_PRIVATE).edit();
+                                                                                            editor.putInt("first-time",1);
+                                                                                            editor.apply();
+                                                                                            Intent intent = new Intent(Welcome.this, LoginScreen.class);
+                                                                                            startActivity(intent);
+                                                                                        }
+                                                                                        else
+                                                                                        {
+                                                                                            if (checkDatabaseUser(username)) {
+                                                                                                String welcome = "Welcome " + username;
+                                                                                                Toast.makeText(Welcome.this, welcome, Toast.LENGTH_LONG).show();
+                                                                                                Intent intent = new Intent(Welcome.this, setlist_main.class);
+                                                                                                startActivity(intent);
+                                                                                            }
+                                                                                        }
                                                                                     }
-                                                                                }
+                                                                                }, 2500);
                                                                             }
-                                                                        }, 2500);
+                                                                        });
                                                                     }
                                                                 });
                                                             }
-                                                        });
+                                                        }, 500);
                                                     }
-                                                }, 500);
+                                                });
                                             }
-                                        });
+                                        }, 200);
                                     }
-                                }, 200);
+                                });
                             }
-                        });
-                    }
-                }, 500);
+                        }, 500);
 
+                    }
+                });
             }
-        });
+            else {
+                Intent intent = new Intent(Welcome.this,setlist_main.class);
+                startActivity(intent);
+            }
+
+        }
+        else {
+            Intent intent = new Intent(this,setlist_main.class);
+            startActivity(intent);
+            finish();
+        }
+
     }
 
     @Override
@@ -164,6 +188,7 @@ public class Welcome extends AppCompatActivity {
                              {
                                 value[0] = false;
                              }
+                             System.out.println(response.code());
                          }
 
                          @Override
@@ -172,6 +197,7 @@ public class Welcome extends AppCompatActivity {
                          }
                      }
         );
+//        System.out.println(value[0]);
         return value[0];
     }
 }

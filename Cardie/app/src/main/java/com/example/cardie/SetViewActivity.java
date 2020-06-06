@@ -30,6 +30,7 @@ public class SetViewActivity extends AppCompatActivity {
     private String[] imageUrls = new String[]{
 
     };
+    int c=0;
     ViewPagerAdapter_SetCard Adapter;
     ViewPager viewPager;
     List<Card> mData;
@@ -55,8 +56,8 @@ public class SetViewActivity extends AppCompatActivity {
             }
         });
         mData = new ArrayList<>();
-        String imageurl = "https://www.aldergrovestar.com/wp-content/uploads/2020/02/20592275_web1_Langley-Weather-Sun-Clear-Sky-Skies.jpg";
-//        mData.add(new Card("C01","Cat","Noun",imageurl));
+        final String imageurl = "https://www.aldergrovestar.com/wp-content/uploads/2020/02/20592275_web1_Langley-Weather-Sun-Clear-Sky-Skies.jpg";
+//        mData.add(new Card("C01","Cat","an adorable creature that would kill you","Noun",imageurl));
 //        mData.add(new Card("C01","Dog","Noun",imageurl));
 //        mData.add(new Card("C01","Classification","Noun",imageurl));
         //get information to display
@@ -71,6 +72,7 @@ public class SetViewActivity extends AppCompatActivity {
             public void onResponse(Call<List<Card>> call, Response<List<Card>> response) {
                 for (Card card:response.body())
                 {
+                    card.setCardImageUrl(imageurl);
                     mData.add(card);
                 }
                 Toast.makeText(getApplicationContext(),String.valueOf(mData.size()), Toast.LENGTH_LONG).show();
@@ -105,6 +107,8 @@ public class SetViewActivity extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(), t.getMessage(), Toast.LENGTH_LONG).show();
             }
         });
+        final TextView cardDef=findViewById(R.id.card_in_set_definition);
+
 
     }
 

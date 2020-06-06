@@ -51,6 +51,7 @@ public class LoginScreen extends AppCompatActivity {
                     call.enqueue(new Callback<User>() {
                                      @Override
                                      public void onResponse(Call<User> call, Response<User> response) {
+                                         System.out.println(response.code());
                                          if (response.code()==200) {
                                                  Toast.makeText(LoginScreen.this, "Username has existed", Toast.LENGTH_LONG).show();
                                                  username.setText("");

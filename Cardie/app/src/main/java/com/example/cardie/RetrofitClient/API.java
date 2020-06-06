@@ -19,9 +19,9 @@ import retrofit2.http.Query;
 
 public interface API {
     String BASE_URL = "";
-    String LOCAL_URL = "http://192.168.188.163:3000/";
+    String LOCAL_URL = "http://192.168.1.9:3000/";
     String LOCAL_URL2 ="http://192.168.1.77:3000/";
-
+    String LOCAL_URL3 ="http://192.168.43.125:3000/";
     @GET("/all-card")
     Call<List<Card>> getCard();
 

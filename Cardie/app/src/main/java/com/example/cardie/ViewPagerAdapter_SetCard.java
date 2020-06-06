@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -23,6 +24,7 @@ public class ViewPagerAdapter_SetCard extends PagerAdapter {
     ViewGroup Container;
     View view;
     String[] imageurl;
+    int c=0;
 
     static CardView cardView;
 
@@ -46,7 +48,7 @@ public class ViewPagerAdapter_SetCard extends PagerAdapter {
     private View initObject(ViewGroup container, int position)
     {
         layoutInflater = LayoutInflater.from(mContext);
-        View view1 = layoutInflater.inflate(R.layout.card_in_set_template,container,false);
+        final View view1 = layoutInflater.inflate(R.layout.card_in_set_template,container,false);
         cardView = view1.findViewById(R.id.CardTemplate);
 /*        String mDrawableName = mData.get(position).getCardImageUrl(); //R.drawable.bunny_Sweden*/
         ImageView imgView = view1.findViewById(R.id.CardBackground);
@@ -59,8 +61,21 @@ public class ViewPagerAdapter_SetCard extends PagerAdapter {
                 .into(imgView);
         TextView cardName = view1.findViewById(R.id.CardName);
         TextView cardType = view1.findViewById(R.id.CardNameType);
+        final TextView cardDef = view1.findViewById(R.id.card_in_set_definition);
         cardName.setText(mData.get(position).getCardWord());
         cardType.setText(mData.get(position).getCardType());
+        cardDef.setText(mData.get(position).getCardDefinition());
+        cardView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                LinearLayout infoLayout = view1.findViewById(R.id.basicInfo);
+                infoLayout.setVisibility(View.INVISIBLE);
+                cardDef.setVisibility(View.VISIBLE);
+            }
+
+        });
+
+//        LinearLayout cardNameLayout = view1.findViewById()
         return view1;
     }
 
