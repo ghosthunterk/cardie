@@ -130,7 +130,7 @@ MongoClient.connect(url, {useNewUrlParser: true}, function(err, client){
             db = client.db(DATABASE_NAME);
             db.collection('User').insertOne(data,function(err, res) {
                 if (err) throw err;
-                console.log("1 card inserted in Card");
+                console.log("1 user added in User");
                 // client.close();
             });
         });
@@ -139,7 +139,7 @@ MongoClient.connect(url, {useNewUrlParser: true}, function(err, client){
         {
             data = request.query.Username;
             db = client.db(DATABASE_NAME);
-            db.collection('User').find({username:data}).toArray(function(err, result) {
+            db.collection('User').find({user:data}).toArray(function(err, result) {
                 if (err) throw err;
                 if (result.length>0)
                 {

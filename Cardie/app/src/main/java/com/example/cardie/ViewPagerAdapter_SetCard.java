@@ -51,6 +51,7 @@ public class ViewPagerAdapter_SetCard extends PagerAdapter {
 /*        String mDrawableName = mData.get(position).getCardImageUrl(); //R.drawable.bunny_Sweden*/
         ImageView imgView = view1.findViewById(R.id.CardBackground);
 /*        imgView.setImageResource(mDrawableName);*/
+        System.out.println(mData.get(position).getCardImageUrl());
         Picasso.get()
                 .load(mData.get(position).getCardImageUrl())
                 .fit()

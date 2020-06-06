@@ -143,6 +143,11 @@ public class Welcome extends AppCompatActivity {
         });
     }
 
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+    }
+
     private boolean checkDatabaseUser(String str)
     {
         final boolean[] value = {false};
